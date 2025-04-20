@@ -1,1 +1,186 @@
-<p>This is first page</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="puyokuraのポートフォリオサイト">
+    <title>puyokura's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#home">puyokura</a>
+            </div>
+            <button class="nav-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#works">作品</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>ソフトウェアエンジニア・Web開発者</p>
+                <div class="hero-buttons">
+                    <a href="#works" class="btn primary">作品を見る</a>
+                    <a href="#contact" class="btn secondary">お問い合わせ</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">自己紹介</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>こんにちは！私はpuyokuraです。</p>
+                        <p>ソフトウェア開発に情熱を持ち、特にWeb技術とオープンソースの開発に興味があります。</p>
+                        <p>日々新しい技術を学び、より良いソリューションを提供することを心がけています。</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-code"></i>
+                            <h3>開発経験</h3>
+                            <p>3年以上</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>プロジェクト</h3>
+                            <p>15+完了</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h3>チーム開発</h3>
+                            <p>多数経験</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">スキル</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>フロントエンド</h3>
+                        <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3>バックエンド</h3>
+                        <p>Node.js, Python, Java, SQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>モバイル開発</h3>
+                        <p>React Native, Flutter</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>クラウド</h3>
+                        <p>AWS, Google Cloud, Azure</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="section">
+            <div class="container">
+                <h2 class="section-title">作品</h2>
+                <div class="works-grid">
+                    <article class="work-card">
+                        <div class="work-image">
+                            <img src="https://via.placeholder.com/400x300" alt="プロジェクト1">
+                        </div>
+                        <div class="work-content">
+                            <h3>ポートフォリオサイト</h3>
+                            <p>React.jsを使用して作成した個人ポートフォリオサイト</p>
+                            <div class="work-tags">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="#" class="btn primary">詳細を見る</a>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-image">
+                            <img src="https://via.placeholder.com/400x300" alt="プロジェクト2">
+                        </div>
+                        <div class="work-content">
+                            <h3>天気予報アプリ</h3>
+                            <p>リアルタイムの天気情報を提供するWebアプリケーション</p>
+                            <div class="work-tags">
+                                <span>Vue.js</span>
+                                <span>Node.js</span>
+                                <span>API</span>
+                            </div>
+                            <a href="#" class="btn primary">詳細を見る</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>SNSでつながりましょう</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/puyokura" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 puyokura. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
