@@ -1,15 +1,19 @@
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-    --text-color: #333333;
-    --light-text-color: #ffffff;
-    --bg-light: #f5f6fa;
-    --bg-dark: #2c3e50;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --primary-color: #00f7ff;
+    --secondary-color: #ff00d4;
+    --background-dark: #0a0a0a;
+    --background-light: #1a1a1a;
+    --text-color: #ffffff;
+    --text-color-dim: rgba(255, 255, 255, 0.7);
+    --success-color: #00ff9d;
+    --error-color: #ff0055;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --neon-shadow: 0 0 10px rgba(0, 247, 255, 0.5),
+                   0 0 20px rgba(0, 247, 255, 0.3),
+                   0 0 30px rgba(0, 247, 255, 0.1);
 }
 
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,33 +28,74 @@ body {
     font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    background-color: var(--background-dark);
+    overflow-x: hidden;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+/* Custom Cursor */
+.cursor {
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease;
 }
 
-/* ナビゲーション */
+.cursor-follower {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transition: all 0.3s ease;
+}
+
+/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--bg-dark);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
 }
 
-.nav-brand a {
-    color: var(--light-text-color);
-    text-decoration: none;
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: var(--background-dark);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--neon-shadow);
+}
+
+.brand-text {
     font-size: 1.5rem;
     font-weight: bold;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-menu {
@@ -60,114 +105,239 @@ body {
 }
 
 .nav-menu a {
-    color: var(--light-text-color);
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    transition: var(--transition);
+    position: relative;
+    padding: 0.5rem 0;
 }
 
-.nav-menu a:hover {
+.nav-menu a::before {
+    content: attr(data-text);
+    position: absolute;
     color: var(--primary-color);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
-.nav-toggle {
-    display: none;
+.nav-menu a:hover::before {
+    width: 100%;
 }
 
-/* ヒーローセクション */
+/* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
-                url('https://source.unsplash.com/random/1920x1080?technology') center/cover;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(var(--primary-color), 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--primary-color), 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-movement 20s linear infinite;
+}
+
+@keyframes grid-movement {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.hero-content {
     text-align: center;
-    color: var(--light-text-color);
-    padding-top: 80px;
+    z-index: 1;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.glitch {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 var(--primary-color),
+                 -0.05em -0.025em 0 var(--secondary-color),
+                 -0.025em 0.05em 0 var(--success-color);
+    animation: glitch 500ms infinite;
 }
 
-.hero-buttons {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 var(--primary-color),
+                     -0.05em -0.025em 0 var(--secondary-color),
+                     -0.025em 0.05em 0 var(--success-color);
+    }
+    14% {
+        text-shadow: 0.05em 0 0 var(--primary-color),
+                     -0.05em -0.025em 0 var(--secondary-color),
+                     -0.025em 0.05em 0 var(--success-color);
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 var(--primary-color),
+                     0.025em 0.025em 0 var(--secondary-color),
+                     -0.05em -0.05em 0 var(--success-color);
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 var(--primary-color),
+                     0.025em 0.025em 0 var(--secondary-color),
+                     -0.05em -0.05em 0 var(--success-color);
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 var(--primary-color),
+                     0.05em 0 0 var(--secondary-color),
+                     0 -0.05em 0 var(--success-color);
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 var(--primary-color),
+                     0.05em 0 0 var(--secondary-color),
+                     0 -0.05em 0 var(--success-color);
+    }
+    100% {
+        text-shadow: -0.025em 0 0 var(--primary-color),
+                     -0.025em -0.025em 0 var(--secondary-color),
+                     -0.025em -0.05em 0 var(--success-color);
+    }
 }
 
-/* セクション共通 */
-.section {
-    padding: 5rem 0;
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--text-color-dim);
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    color: var(--secondary-color);
-}
-
-.bg-light {
-    background-color: var(--bg-light);
-}
-
-/* ボタン */
+/* Button Styles */
 .btn {
     display: inline-block;
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
+    padding: 1rem 2rem;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn.primary {
-    background-color: var(--primary-color);
-    color: var(--light-text-color);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
 }
 
 .btn.secondary {
-    background-color: transparent;
-    border: 2px solid var(--light-text-color);
-    color: var(--light-text-color);
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--neon-shadow);
 }
 
-/* スキルセクション */
+/* Sections */
+.section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+    color: var(--text-color);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .skill-card {
-    background-color: white;
+    background: var(--background-light);
     padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: var(--shadow);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: var(--neon-shadow);
 }
 
-.skill-card i {
+.skill-icon {
     font-size: 3rem;
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-/* 作品セクション */
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    margin: 1rem 0;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color-dim);
+}
+
+.skill-bar {
+    height: 8px;
+    background: var(--background-dark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Works Section */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -175,107 +345,187 @@ body {
 }
 
 .work-card {
-    background-color: white;
-    border-radius: 10px;
+    background: var(--background-light);
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.work-image {
+    position: relative;
+    overflow: hidden;
 }
 
 .work-image img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    transition: var(--transition);
 }
 
-.work-content {
-    padding: 1.5rem;
+.work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.work-card:hover .work-overlay {
+    opacity: 1;
+}
+
+.work-card:hover .work-image img {
+    transform: scale(1.1);
+}
+
+.work-details {
+    text-align: center;
+    padding: 2rem;
 }
 
 .work-tags {
+    padding: 1rem;
     display: flex;
     gap: 0.5rem;
-    margin: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .work-tags span {
-    background-color: var(--bg-light);
-    padding: 0.3rem 0.8rem;
+    background: var(--background-dark);
+    color: var(--primary-color);
+    padding: 0.3rem 1rem;
     border-radius: 15px;
     font-size: 0.8rem;
 }
 
-/* コンタクトフォーム */
+/* Contact Section */
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    text-align: center;
 }
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.social-links a {
-    color: var(--secondary-color);
+.social-link {
+    color: var(--text-color);
     font-size: 2rem;
     transition: var(--transition);
 }
 
-.social-links a:hover {
+.social-link:hover {
     color: var(--primary-color);
+    transform: translateY(-5px);
 }
 
+/* Form Styles */
 .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
+    padding: 1rem;
+    background: var(--background-light);
+    border: none;
     border-radius: 5px;
+    color: var(--text-color);
     font-size: 1rem;
 }
 
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    transition: var(--transition);
+    color: var(--text-color-dim);
 }
 
-/* フッター */
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    transition: var(--transition);
+}
+
+.form-group input:focus ~ .focus-border,
+.form-group textarea:focus ~ .focus-border {
+    width: 100%;
+}
+
+/* Footer */
 .footer {
-    background-color: var(--bg-dark);
-    color: var(--light-text-color);
+    background: var(--background-light);
     padding: 2rem 0;
     text-align: center;
 }
 
-/* レスポンシブデザイン */
+.footer-time {
+    color: var(--text-color-dim);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0.5rem;
-    }
-
-    .nav-toggle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: var(--light-text-color);
-        margin: 5px 0;
-        transition: var(--transition);
     }
 
     .nav-menu {
@@ -283,11 +533,10 @@ body {
         top: 70px;
         left: 0;
         right: 0;
-        background-color: var(--bg-dark);
+        background: var(--background-light);
         padding: 1rem;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
         transform: translateY(-150%);
         transition: var(--transition);
     }
@@ -297,15 +546,10 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .contact-content {
         grid-template-columns: 1fr;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
     }
 }
