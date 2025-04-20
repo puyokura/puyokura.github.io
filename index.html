@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="puyokuraのポートフォリオサイト | Web Developer">
-    <title>puyokura Portfolio</title>
+    <meta name="description" content="puyokuraのポートフォリオサイト">
+    <title>puyokura's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-    
+    <div class="bg-glow"></div>
     <header>
-        <nav class="navbar">
+        <nav class="navbar glass">
             <div class="nav-brand">
-                <div class="logo">P</div>
-                <span class="brand-text">puyokura</span>
+                <a href="#home"><i class="fas fa-bolt"></i> puyokura</a>
             </div>
             <button class="nav-toggle" aria-label="メニューを開く">
                 <span></span>
@@ -24,207 +21,139 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="#home" data-text="HOME">ホーム</a></li>
-                <li><a href="#about" data-text="ABOUT">自己紹介</a></li>
-                <li><a href="#skills" data-text="SKILLS">スキル</a></li>
-                <li><a href="#works" data-text="WORKS">作品</a></li>
-                <li><a href="#contact" data-text="CONTACT">お問い合わせ</a></li>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#works">作品</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero glass">
             <div class="hero-content">
-                <div class="glitch-container">
-                    <h1 class="glitch" data-text="puyokura">puyokura</h1>
-                </div>
-                <p class="hero-subtitle">Web Developer & Engineer</p>
-                <div class="hero-description">
-                    <span class="typed-text"></span><span class="cursor-typing">|</span>
-                </div>
+                <h1><span class="futuristic-text">puyokura</span><br>のポートフォリオ</h1>
+                <p>Webエンジニア / Pythonista</p>
                 <div class="hero-buttons">
-                    <a href="#works" class="btn primary">View Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+                    <a href="#works" class="btn primary-glow">作品を見る</a>
+                    <a href="#contact" class="btn secondary-glow">お問い合わせ</a>
                 </div>
-            </div>
-            <div class="hero-background">
-                <div class="grid"></div>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">About Me</h2>
+        <section id="about" class="section glass">
+            <div class="container">
+                <h2 class="section-title neon">自己紹介</h2>
                 <div class="about-content">
-                    <div class="about-image">
-                        <div class="image-frame">
-                            <img src="https://via.placeholder.com/400x400" alt="Profile">
-                        </div>
-                    </div>
                     <div class="about-text">
-                        <p>こんにちは。私はpuyokuraです。</p>
-                        <p>フロントエンド開発とPythonによるバックエンド開発を専門としています。</p>
-                        <p>最新のWeb技術とユーザー体験に焦点を当て、革新的なソリューションを提供することを心がけています。</p>
-                        <div class="about-stats">
-                            <div class="stat">
-                                <span class="stat-number" data-target="3">0</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number" data-target="15">0</span>
-                                <span class="stat-label">Projects Completed</span>
-                            </div>
-                        </div>
+                        <p>こんにちは！私は<span class="highlight">puyokura</span>です。</p>
+                        <p>フロントエンドの美しいUIとPythonバックエンドの堅牢さを追求し、<span class="highlight">未来を感じるWeb体験</span>を創造します。</p>
+                        <p>新しい技術とデザインの融合を目指し、日々チャレンジしています。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Skills</h2>
+        <section id="skills" class="section glass">
+            <div class="container">
+                <h2 class="section-title neon">スキル</h2>
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Frontend</h3>
+                    <div class="skill-card glass">
+                        <i class="fas fa-laptop-code gradient-icon"></i>
+                        <h3>フロントエンド</h3>
                         <ul class="skill-list">
-                            <li>
-                                <span class="skill-name">HTML</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="90"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="skill-name">CSS</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="85"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="skill-name">JavaScript</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend</h3>
+                    <div class="skill-card glass">
+                        <i class="fas fa-server gradient-icon"></i>
+                        <h3>バックエンド</h3>
                         <ul class="skill-list">
-                            <li>
-                                <span class="skill-name">Python</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="85"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="skill-name">データベース設計</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="75"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="skill-name">API開発</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </li>
+                            <li>Python</li>
+                            <li>データベース設計</li>
+                            <li>API開発</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="works" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Works</h2>
+        <section id="works" class="section glass">
+            <div class="container">
+                <h2 class="section-title neon">作品</h2>
                 <div class="works-grid">
-                    <article class="work-card">
+                    <article class="work-card glass-hover">
                         <div class="work-image">
-                            <img src="https://via.placeholder.com/400x300" alt="Project 1">
-                            <div class="work-overlay">
-                                <div class="work-details">
-                                    <h3>インタラクティブWebアプリ</h3>
-                                    <p>HTMLとJavaScriptを使用した次世代のWebアプリケーション</p>
-                                    <a href="#" class="btn primary">詳細を見る</a>
-                                </div>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Webアプリケーション">
                         </div>
-                        <div class="work-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                        <div class="work-content">
+                            <h3 class="neon">Webアプリケーション</h3>
+                            <p>HTMLとJavaScriptを駆使した、インタラクティブな未来感あるWebアプリ。</p>
+                            <div class="work-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="btn secondary-glow">詳細を見る</a>
                         </div>
                     </article>
-                    <article class="work-card">
+                    <article class="work-card glass-hover">
                         <div class="work-image">
-                            <img src="https://via.placeholder.com/400x300" alt="Project 2">
-                            <div class="work-overlay">
-                                <div class="work-details">
-                                    <h3>高性能APIサービス</h3>
-                                    <p>Pythonを使用した最新のRESTful API開発</p>
-                                    <a href="#" class="btn primary">詳細を見る</a>
-                                </div>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="APIサービス">
                         </div>
-                        <div class="work-tags">
-                            <span>Python</span>
-                            <span>API</span>
-                            <span>データベース</span>
+                        <div class="work-content">
+                            <h3 class="neon">APIサービス</h3>
+                            <p>Pythonによる高速かつ信頼性の高いRESTful API。</p>
+                            <div class="work-tags">
+                                <span>Python</span>
+                                <span>API</span>
+                                <span>データベース</span>
+                            </div>
+                            <a href="#" class="btn secondary-glow">詳細を見る</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Contact</h2>
+        <section id="contact" class="section glass">
+            <div class="container">
+                <h2 class="section-title neon">お問い合わせ</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Let's Connect</h3>
+                        <h3><i class="fas fa-share-alt"></i> SNSでつながりましょう</h3>
                         <div class="social-links">
-                            <a href="https://github.com/puyokura" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <a href="https://github.com/puyokura" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" required>
                             <label for="name">お名前</label>
-                            <span class="focus-border"></span>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" required>
                             <label for="email">メールアドレス</label>
-                            <span class="focus-border"></span>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" required></textarea>
                             <label for="message">メッセージ</label>
-                            <span class="focus-border"></span>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
-                        <button type="submit" class="btn primary">
-                            <span>送信する</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
+                        <button type="submit" class="btn primary-glow">送信する</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer glass">
         <div class="container">
-            <p>&copy; 2025 puyokura. All rights reserved.</p>
-            <p class="footer-time">Last updated: 2025-04-20 07:24:13 UTC</p>
+            <p>© 2025 puyokura. All rights reserved.</p>
         </div>
     </footer>
 
