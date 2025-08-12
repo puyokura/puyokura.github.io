@@ -4,16 +4,20 @@
 
 @charset "utf-8";
 
-// 変数
-$base-font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
-$base-font-size:   16px;
-$base-line-height: 1.8;
-$content-width:    720px;
-$text-color:       #333;
-$background-color: #fff;
-$grey-color:       #828282;
+// --- Variables: GitHub Light Theme --- //
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+$font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
-// 基本的なリセットと設定
+$text-color: #24292f;
+$bg-color: #ffffff;
+$border-color: #d0d7de;
+$link-color: #0969da;
+$code-bg-color: #f6f8fa;
+$header-bg-color: #f6f8fa;
+
+$content-width: 1012px;
+
+// --- Base Resets & Styles --- //
 *,
 *::before,
 *::after {
@@ -21,31 +25,31 @@ $grey-color:       #828282;
 }
 
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   color: $text-color;
-  background-color: $background-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: $bg-color;
 }
 
 .wrapper {
   max-width: $content-width;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-// ヘッダー
+// --- Header --- //
 .site-header {
-  border-bottom: 1px solid #eee;
-  padding: 20px 0;
+  background-color: $header-bg-color;
+  border-bottom: 1px solid $border-color;
+  padding: 16px 0;
 
   .site-title {
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 600;
     color: $text-color;
     text-decoration: none;
   }
@@ -53,52 +57,70 @@ body {
   .site-nav {
     float: right;
     a {
-      color: $grey-color;
+      color: $text-color;
       text-decoration: none;
       margin-left: 20px;
+      &:hover {
+        color: $link-color;
+      }
     }
   }
 }
 
-// メインコンテンツ
+// --- Main Content --- //
 .page-content {
-  padding: 40px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-// フッター
+// --- Footer --- //
 .site-footer {
-  border-top: 1px solid #eee;
-  padding: 20px 0;
-  font-size: 0.8em;
-  color: $grey-color;
+  border-top: 1px solid $border-color;
+  padding: 40px 0;
+  margin-top: 40px;
   text-align: center;
+  font-size: 0.9em;
+  color: #57606a;
 }
 
-// 記事のスタイル
+// --- Post & Markdown Styles --- //
 .post-header {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .post-title {
-  font-size: 2.5em;
-  line-height: 1.2;
+  font-size: 2em;
+  font-weight: 600;
   margin: 0;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
 }
 
 .post-meta {
   font-size: 0.9em;
-  color: $grey-color;
+  color: #57606a;
 }
 
 .post-content {
   h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif; // 見出しはゴシック体
-    margin-top: 2em;
-    margin-bottom: 1em;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 0.3em;
+  }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.25em; }
+
+  p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 16px;
   }
 
   a {
-    color: #1a73e8; // リンク色
+    color: $link-color;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -106,16 +128,35 @@ body {
   }
 
   code {
-    background-color: #f3f3f3;
-    padding: 2px 4px;
-    border-radius: 3px;
+    font-family: $font-family-monospace;
+    background-color: $code-bg-color;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 6px;
   }
 
   pre {
-    background-color: #2d2d2d;
-    color: #f8f8f2;
-    padding: 1em;
-    border-radius: 5px;
-    overflow-x: auto;
+    font-family: $font-family-monospace;
+    background-color: $code-bg-color;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    border-radius: 6px;
+
+    code {
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: #57606a;
+    border-left: 0.25em solid $border-color;
   }
 }
