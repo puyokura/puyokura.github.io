@@ -1,0 +1,32 @@
+ja-JP:
+  # General
+  date_label: "更新日"
+  read_time: "読了時間"
+  minute_read: "分で読めます"
+  less_than_a_minute_read: "1分未満で読めます"
+
+  # Navigation
+  nav_home: "ホーム"
+  nav_about: "概要"
+  nav_blog: "ブログ"
+
+  # Posts
+  recent_posts: "最近の投稿"
+  posts_by_category: "カテゴリ別投稿一覧"
+  posts_by_tag: "タグ別投稿一覧"
+  previous_post: "前の記事"
+  next_post: "次の記事"
+  related_posts: "関連記事"
+
+  # Table of contents
+  toc_label: "目次"
+
+  # Search
+  search_placeholder_text: "サイト内を検索"
+
+  # Comments
+  comments_label: "コメント"
+  comments_title: "コメントを残す"
+
+  # Footer
+  follow_label: "フォローする"
