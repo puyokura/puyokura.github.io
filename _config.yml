@@ -24,7 +24,7 @@ locale: "ja-JP" # サイトの言語を日本語に設定
 # Build settings
 # theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Plugins
 plugins:

@@ -10,3 +10,19 @@ $sans-serif: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", Mei
 // Import the Minimal Mistakes theme styles
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+/* --- Qiita-like Customizations --- */
+
+.masthead {
+  background-color: #55c500 !important;
+}
+
+.masthead__inner-wrap {
+  .masthead__menu-item {
+    color: white !important;
+  }
+  .masthead__title a {
+    color: white !important;
+  }
+}
