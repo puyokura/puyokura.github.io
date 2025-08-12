@@ -7,7 +7,8 @@ layout: default
 </div>
 
 <div class="Box">
-  {% for tag in site.tags | sort %}
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
     <div class="Box-row">
       <h2 id="{{ tag[0] | slugify }}" class="tag-name">{{ tag[0] }}</h2>
       <ul class="post-list-by-tag">
