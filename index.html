@@ -1,18 +1,15 @@
 ---
-layout: home
+layout: default
 ---
-
-<div class="post-list">
-  <h1>記事一覧</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
-        <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
-        <p>{{ post.excerpt }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="Box">
+  {% for post in site.posts %}
+  <div class="Box-row d-flex">
+    <div class="flex-auto">
+      <a href="{{ post.url | relative_url }}" class="f4 Link--primary v-align-middle">{{ post.title }}</a>
+      <div class="text-small color-fg-muted">
+        #{{ forloop.index }} opened on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> by {{ site.author.name }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
