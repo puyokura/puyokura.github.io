@@ -24,7 +24,7 @@ locale: "ja-JP" # サイトの言語を日本語に設定
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
 # Markdown Processing
 kramdown:
@@ -33,10 +33,16 @@ kramdown:
   syntax_highlighter_opts:
     css_class: 'highlight'
 
+# Pagination (jekyll-paginate-v2)
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+
 # Author
 author:
   name: "puyokura"
-
-# Pagination
-paginate: 5
-paginate_path: "/page:num/"
