@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="Box">
+  {% for post in site.posts %}
+    <div class="Box-row">
+      <a href="{{ post.url | relative_url }}" class="f4 Link--primary">{{ post.title }}</a>
+      <p class="text-gray-light mb-0 mt-1">
+        {{ post.date | date: "%Y年%m月%d日" }}
+      </p>
+      <p class="mt-1">
+        {{ post.excerpt }}
+      </p>
+    </div>
+  {% endfor %}
+</div>

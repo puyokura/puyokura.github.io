@@ -4,31 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
+    <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
-    <header class="page-header">
-      <div class="wrapper">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </div>
-      <nav class="UnderlineNav">
-        <div class="wrapper">
-          <a href="{{ '/' | relative_url }}" class="UnderlineNav-item {% if page.url == '/' %}is-selected{% endif %}">Home</a>
-          <a href="/tags/" class="UnderlineNav-item {% if page.url contains '/tags' %}is-selected{% endif %}">Tags</a>
-          <a href="/about/" class="UnderlineNav-item {% if page.url contains '/about' %}is-selected{% endif %}">About</a>
-        </div>
-      </nav>
-    </header>
-    <main class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    {% include header.html %}
+    <main class="container-lg p-3 p-md-4 p-lg-5">
+      {{ content }}
     </main>
-    <footer class="site-footer">
-      <div class="wrapper">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | default: site.title }}.</p>
-      </div>
-    </footer>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% include footer.html %}
   </body>
 </html>
