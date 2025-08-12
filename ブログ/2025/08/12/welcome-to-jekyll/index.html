@@ -4,33 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jekyllへようこそ！</title>
+    <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="wrapper">
-        <a class="site-title" href="/">puyokura's tech blog</a>
-      </div>
-      <nav class="UnderlineNav">
-        <div class="wrapper">
-          <a href="/" class="UnderlineNav-item ">Home</a>
-          <a href="/tags/" class="UnderlineNav-item ">Tags</a>
-          <a href="/about/" class="UnderlineNav-item ">About</a>
-        </div>
-      </nav>
-    </header>
-    <main class="page-content">
-      <div class="wrapper">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Jekyllへようこそ！</h1>
-    <p class="post-meta">2025年08月12日</p>
-  </header>
-
-  <div class="Box">
-    <div class="Box-body post-content">
-      <p>この記事は <code class="language-plaintext highlighter-rouge">_posts</code> ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。</p>
+    <header class="Header">
+  <div class="Header-item">
+    <a href="/" class="Header-link f4 d-flex flex-items-center">
+      <span>puyokura's tech blog</span>
+    </a>
+  </div>
+  <div class="Header-item Header-item--full"></div>
+  <div class="Header-item">
+    <a href="/about/" class="Header-link">About</a>
+  </div>
+  <div class="Header-item">
+    <a href="/tags/" class="Header-link">Tags</a>
+  </div>
+</header>
+    <main class="container-lg p-3 p-md-4 p-lg-5">
+      <article class="Box">
+  <div class="Box-header">
+    <h1 class="Box-title">Jekyllへようこそ！</h1>
+    <p class="text-gray-light mb-0 mt-1">2025年08月12日</p>
+  </div>
+  <div class="Box-body markdown-body">
+    <p>この記事は <code class="language-plaintext highlighter-rouge">_posts</code> ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。</p>
 
 <p>Jekyllのブログ投稿ファイルは、以下の形式で名前を付ける必要があります。</p>
 
@@ -58,29 +57,13 @@ $</p>
 <p>Jekyllを最大限に活用する方法については、<a href="https://jekyllrb.com/docs/home">Jekyllのドキュメント</a>をご覧ください。バグや機能リクエストは<a href="https://github.com/jekyll/jekyll">JekyllのGitHubリポジトリ</a>へ。質問は<a href="https://talk.jekyllrb.com/">Jekyll Talk</a>でどうぞ。</p>
 
 
-    </div>
   </div>
-
-  
-  <div class="post-tags">
-    <h3>Tags:</h3>
-    
-      <a href="/tags/#jekyll" class="Label">Jekyll</a>
-    
-      <a href="/tags/#サンプル" class="Label">サンプル</a>
-    
-  </div>
-  
-
 </article>
-
-      </div>
     </main>
-    <footer class="site-footer">
-      <div class="wrapper">
-        <p>&copy; 2025 puyokura.</p>
-      </div>
-    </footer>
-    <script src="/assets/js/main.js"></script>
+    <footer class="footer container-lg px-3">
+  <div class="d-flex flex-justify-center">
+    <span class="f6 text-gray">&copy; 2025 puyokura.</span>
+  </div>
+</footer>
   </body>
 </html>
