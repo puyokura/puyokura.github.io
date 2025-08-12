@@ -300,32 +300,36 @@ a {
     background-color: #21262d; // Dark mode hover
   }
 }
-.Box {
-  background-color: var(--color-bg-primary);
-  border: 1px solid var(--color-border-primary);
-  border-radius: 6px;
-}
 
-.Box-header {
-  padding: 16px;
-  margin: -1px -1px 0;
-  background-color: var(--color-bg-secondary);
-  border-bottom: 1px solid var(--color-border-primary);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
+// --- Post List --- //
+.post-list {
+  list-style: none;
+  padding-left: 0;
 
-.Box-body {
-  padding: 16px;
-}
+  li {
+    border-top: 1px solid var(--color-border-primary);
+    padding: 1.5em 0;
+    &:first-child {
+      border-top: none;
+    }
+  }
 
-.Box-row {
-  padding: 16px;
-  border-top: 1px solid var(--color-border-primary);
-  &:first-of-type {
-    border-top: 0;
+  h2 {
+    margin: 0 0 0.2em 0;
+    font-size: 1.5em;
+  }
+
+  a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .post-meta {
+    display: block;
+    font-size: 0.9em;
   }
 }
+
 
 // --- Syntax Highlighting --- //
 .highlight {

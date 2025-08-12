@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<div class="Box">
-  <div class="Box-header">
-    <h3 class="Box-title">最新の記事</h3>
-  </div>
-  {% for post in paginator.posts %}
-    <div class="Box-row">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <p class="text-gray-light">{{ post.date | date: "%Y年%m月%d日" }}</p>
-    </div>
-  {% endfor %}
+<div class="post-list">
+  <h1>最新の記事</h1>
+  <ul>
+    {% for post in paginator.posts %}
+      <li>
+        <h2>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="pagination">
