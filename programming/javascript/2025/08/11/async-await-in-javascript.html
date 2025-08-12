@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScriptの非同期処理：Async/Awaitを理解する</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <a class="site-title" href="/">puyokura's tech blog</a>
+      </div>
+      <nav class="UnderlineNav">
+        <div class="wrapper">
+          <a href="/" class="UnderlineNav-item ">Home</a>
+          <a href="/tags/" class="UnderlineNav-item ">Tags</a>
+          <a href="/about/" class="UnderlineNav-item ">About</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">JavaScriptの非同期処理：Async/Awaitを理解する</h1>
+    <p class="post-meta">2025年08月11日</p>
+  </header>
+
+  <div class="Box">
+    <div class="Box-body post-content">
+      <p>JavaScriptにおける非同期処理は、多くの開発者がつまずくポイントの一つです。特に、<code class="language-plaintext highlighter-rouge">Promise</code>をさらに直感的に扱えるようにした<code class="language-plaintext highlighter-rouge">async/await</code>構文は、現代的なJavaScript開発に欠かせません。</p>
+
+<h2 id="asyncawaitとは">Async/Awaitとは？</h2>
+
+<p><code class="language-plaintext highlighter-rouge">async</code>関数は、内部で<code class="language-plaintext highlighter-rouge">await</code>キーワードを使うことを可能にします。<code class="language-plaintext highlighter-rouge">await</code>は<code class="language-plaintext highlighter-rouge">Promise</code>が解決されるまで関数の実行を一時停止し、解決された後にその結果を返します。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Promiseを返す非同期関数</span>
+<span class="kd">function</span> <span class="nf">resolveAfter2Seconds</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nc">Promise</span><span class="p">(</span><span class="nx">resolve</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nf">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nf">resolve</span><span class="p">(</span><span class="dl">'</span><span class="s1">resolved</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="k">async</span> <span class="kd">function</span> <span class="nf">asyncCall</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">calling</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="nf">resolveAfter2Seconds</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// 2秒後に "resolved" と表示される</span>
+<span class="p">}</span>
+
+<span class="nf">asyncCall</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>このように、<code class="language-plaintext highlighter-rouge">async/await</code>を使うことで、非同期処理を同期処理のような見た目で簡潔に記述できます。</p>
+
+    </div>
+  </div>
+
+  
+  <div class="post-tags">
+    <h3>Tags:</h3>
+    
+      <a href="/tags/#javascript" class="Label">JavaScript</a>
+    
+      <a href="/tags/#非同期処理" class="Label">非同期処理</a>
+    
+      <a href="/tags/#promise" class="Label">Promise</a>
+    
+  </div>
+  
+
+</article>
+
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>&copy; 2025 puyokura.</p>
+      </div>
+    </footer>
+  </body>
+</html>

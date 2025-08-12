@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reactで簡単なカウンターアプリを作る</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <a class="site-title" href="/">puyokura's tech blog</a>
+      </div>
+      <nav class="UnderlineNav">
+        <div class="wrapper">
+          <a href="/" class="UnderlineNav-item ">Home</a>
+          <a href="/tags/" class="UnderlineNav-item ">Tags</a>
+          <a href="/about/" class="UnderlineNav-item ">About</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Reactで簡単なカウンターアプリを作る</h1>
+    <p class="post-meta">2025年08月04日</p>
+  </header>
+
+  <div class="Box">
+    <div class="Box-body post-content">
+      <p>Reactは、ユーザーインターフェースを構築するための人気のJavaScriptライブラリです。コンポーネントベースの設計が特徴で、再利用性の高いUI部品を作成できます。</p>
+
+<p>ここでは、Reactの基本的なフックである<code class="language-plaintext highlighter-rouge">useState</code>を使って、簡単なカウンターアプリを作成します。</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nf">Counter</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// "count" という新しい state 変数を宣言します</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nf">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="k">return </span><span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>You clicked <span class="si">{</span><span class="nx">count</span><span class="si">}</span> times<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nf">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
+        Click me
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Counter</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>このコードは、クリックするたびに数字が増えるシンプルなカウンターを表示します。<code class="language-plaintext highlighter-rouge">useState</code>が、関数コンポーネント内で状態を保持する力を与えてくれます。</p>
+
+    </div>
+  </div>
+
+  
+  <div class="post-tags">
+    <h3>Tags:</h3>
+    
+      <a href="/tags/#react" class="Label">React</a>
+    
+      <a href="/tags/#フロントエンド" class="Label">フロントエンド</a>
+    
+      <a href="/tags/#チュートリアル" class="Label">チュートリアル</a>
+    
+  </div>
+  
+
+</article>
+
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>&copy; 2025 puyokura.</p>
+      </div>
+    </footer>
+  </body>
+</html>

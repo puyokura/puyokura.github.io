@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid Layoutを使いこなす</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <a class="site-title" href="/">puyokura's tech blog</a>
+      </div>
+      <nav class="UnderlineNav">
+        <div class="wrapper">
+          <a href="/" class="UnderlineNav-item ">Home</a>
+          <a href="/tags/" class="UnderlineNav-item ">Tags</a>
+          <a href="/about/" class="UnderlineNav-item ">About</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CSS Grid Layoutを使いこなす</h1>
+    <p class="post-meta">2025年08月03日</p>
+  </header>
+
+  <div class="Box">
+    <div class="Box-body post-content">
+      <p>CSS Grid Layoutは、Flexboxが1次元のレイアウトシステムであるのに対し、2次元（行と列）のレイアウトを扱うための強力なシステムです。</p>
+
+<h2 id="gridの基本">Gridの基本</h2>
+
+<p>Gridレイアウトを始めるには、コンテナ要素に<code class="language-plaintext highlighter-rouge">display: grid</code>を設定します。</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.grid-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="nb">auto</span> <span class="nb">auto</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">grid-template-rows</span><span class="p">:</span> <span class="m">80px</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#2196F3</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>この例では、3列のグリッドが作成されます。<code class="language-plaintext highlighter-rouge">grid-template-columns</code>で行のサイズ、<code class="language-plaintext highlighter-rouge">grid-template-rows</code>で列のサイズ、<code class="language-plaintext highlighter-rouge">gap</code>でアイテム間の間隔を指定します。</p>
+
+<p>Gridは複雑なWebページのレイアウトを、より直感的かつ堅牢に構築するための現代的な解決策です。</p>
+
+    </div>
+  </div>
+
+  
+  <div class="post-tags">
+    <h3>Tags:</h3>
+    
+      <a href="/tags/#css" class="Label">CSS</a>
+    
+      <a href="/tags/#grid" class="Label">Grid</a>
+    
+      <a href="/tags/#レイアウト" class="Label">レイアウト</a>
+    
+  </div>
+  
+
+</article>
+
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>&copy; 2025 puyokura.</p>
+      </div>
+    </footer>
+  </body>
+</html>

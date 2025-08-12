@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://puyokura.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://puyokura.github.io/" rel="alternate" type="text/html" /><updated>2025-08-12T11:12:12+00:00</updated><id>https://puyokura.github.io/feed.xml</id><title type="html">puyokura’s tech blog</title><subtitle>技術的な知見や備忘録を公開するブログ。</subtitle><author><name>puyokura</name></author><entry><title type="html">Jekyllへようこそ！</title><link href="https://puyokura.github.io/%E3%83%96%E3%83%AD%E3%82%B0/2025/08/12/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Jekyllへようこそ！" /><published>2025-08-12T07:21:47+00:00</published><updated>2025-08-12T07:21:47+00:00</updated><id>https://puyokura.github.io/%E3%83%96%E3%83%AD%E3%82%B0/2025/08/12/welcome-to-jekyll</id><content type="html" xml:base="https://puyokura.github.io/%E3%83%96%E3%83%AD%E3%82%B0/2025/08/12/welcome-to-jekyll.html"><![CDATA[<p>この記事は <code class="language-plaintext highlighter-rouge">_posts</code> ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://puyokura.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://puyokura.github.io/" rel="alternate" type="text/html" /><updated>2025-08-12T11:15:05+00:00</updated><id>https://puyokura.github.io/feed.xml</id><title type="html">puyokura’s tech blog</title><subtitle>技術的な知見や備忘録を公開するブログ。</subtitle><author><name>puyokura</name></author><entry><title type="html">Jekyllへようこそ！</title><link href="https://puyokura.github.io/%E3%83%96%E3%83%AD%E3%82%B0/2025/08/12/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Jekyllへようこそ！" /><published>2025-08-12T07:21:47+00:00</published><updated>2025-08-12T07:21:47+00:00</updated><id>https://puyokura.github.io/%E3%83%96%E3%83%AD%E3%82%B0/2025/08/12/welcome-to-jekyll</id><content type="html" xml:base="https://puyokura.github.io/%E3%83%96%E3%83%AD%E3%82%B0/2025/08/12/welcome-to-jekyll.html"><![CDATA[<p>この記事は <code class="language-plaintext highlighter-rouge">_posts</code> ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。</p>
 
 <p>Jekyllのブログ投稿ファイルは、以下の形式で名前を付ける必要があります。</p>
 
@@ -23,4 +23,191 @@
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $</p>
 
-<p>Jekyllを最大限に活用する方法については、<a href="https://jekyllrb.com/docs/home">Jekyllのドキュメント</a>をご覧ください。バグや機能リクエストは<a href="https://github.com/jekyll/jekyll">JekyllのGitHubリポジトリ</a>へ。質問は<a href="https://talk.jekyllrb.com/">Jekyll Talk</a>でどうぞ。</p>]]></content><author><name>puyokura</name></author><category term="ブログ" /><category term="Jekyll" /><category term="サンプル" /><summary type="html"><![CDATA[この記事は _posts ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは bundle exec jekyll serve コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。]]></summary></entry></feed>
+<p>Jekyllを最大限に活用する方法については、<a href="https://jekyllrb.com/docs/home">Jekyllのドキュメント</a>をご覧ください。バグや機能リクエストは<a href="https://github.com/jekyll/jekyll">JekyllのGitHubリポジトリ</a>へ。質問は<a href="https://talk.jekyllrb.com/">Jekyll Talk</a>でどうぞ。</p>]]></content><author><name>puyokura</name></author><category term="ブログ" /><category term="Jekyll" /><category term="サンプル" /><summary type="html"><![CDATA[この記事は _posts ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは bundle exec jekyll serve コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。]]></summary></entry><entry><title type="html">Docker入門：コンテナ化への第一歩</title><link href="https://puyokura.github.io/devops/tools/2025/08/12/getting-started-with-docker.html" rel="alternate" type="text/html" title="Docker入門：コンテナ化への第一歩" /><published>2025-08-12T01:00:00+00:00</published><updated>2025-08-12T01:00:00+00:00</updated><id>https://puyokura.github.io/devops/tools/2025/08/12/getting-started-with-docker</id><content type="html" xml:base="https://puyokura.github.io/devops/tools/2025/08/12/getting-started-with-docker.html"><![CDATA[<p>Dockerは、アプリケーションをコンテナと呼ばれる軽量なパッケージにまとめて、どんな環境でも迅速かつ確実に実行するためのプラットフォームです。</p>
+
+<h2 id="なぜdockerを使うのか">なぜDockerを使うのか？</h2>
+
+<ul>
+  <li><strong>環境の統一:</strong> 「自分のPCでは動いたのに、サーバーでは動かない」といった問題を解決します。</li>
+  <li><strong>迅速なデプロイ:</strong> コンテナは軽量で、起動も高速です。</li>
+  <li><strong>スケーラビリティ:</strong> 必要に応じてコンテナの数を簡単に増減できます。</li>
+</ul>
+
+<p>以下は簡単なDockerfileの例です。</p>
+
+<div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ベースイメージを指定</span>
+<span class="k">FROM</span><span class="s"> node:18</span>
+
+<span class="c"># アプリケーションのディレクトリを作成</span>
+<span class="k">WORKDIR</span><span class="s"> /usr/src/app</span>
+
+<span class="c"># アプリケーションの依存関係をインストール</span>
+<span class="k">COPY</span><span class="s"> package*.json ./</span>
+<span class="k">RUN </span>npm <span class="nb">install</span>
+
+<span class="c"># アプリケーションのソースをバンドル</span>
+<span class="k">COPY</span><span class="s"> . .</span>
+
+<span class="c"># アプリケーションを公開するポート</span>
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+
+<span class="c"># アプリケーションを起動</span>
+<span class="k">CMD</span><span class="s"> [ "node", "server.js" ]</span>
+</code></pre></div></div>]]></content><author><name>puyokura</name></author><category term="DevOps" /><category term="Tools" /><category term="Docker" /><category term="コンテナ" /><category term="仮想化" /><summary type="html"><![CDATA[Dockerは、アプリケーションをコンテナと呼ばれる軽量なパッケージにまとめて、どんな環境でも迅速かつ確実に実行するためのプラットフォームです。]]></summary></entry><entry><title type="html">JavaScriptの非同期処理：Async/Awaitを理解する</title><link href="https://puyokura.github.io/programming/javascript/2025/08/11/async-await-in-javascript.html" rel="alternate" type="text/html" title="JavaScriptの非同期処理：Async/Awaitを理解する" /><published>2025-08-11T02:00:00+00:00</published><updated>2025-08-11T02:00:00+00:00</updated><id>https://puyokura.github.io/programming/javascript/2025/08/11/async-await-in-javascript</id><content type="html" xml:base="https://puyokura.github.io/programming/javascript/2025/08/11/async-await-in-javascript.html"><![CDATA[<p>JavaScriptにおける非同期処理は、多くの開発者がつまずくポイントの一つです。特に、<code class="language-plaintext highlighter-rouge">Promise</code>をさらに直感的に扱えるようにした<code class="language-plaintext highlighter-rouge">async/await</code>構文は、現代的なJavaScript開発に欠かせません。</p>
+
+<h2 id="asyncawaitとは">Async/Awaitとは？</h2>
+
+<p><code class="language-plaintext highlighter-rouge">async</code>関数は、内部で<code class="language-plaintext highlighter-rouge">await</code>キーワードを使うことを可能にします。<code class="language-plaintext highlighter-rouge">await</code>は<code class="language-plaintext highlighter-rouge">Promise</code>が解決されるまで関数の実行を一時停止し、解決された後にその結果を返します。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Promiseを返す非同期関数</span>
+<span class="kd">function</span> <span class="nf">resolveAfter2Seconds</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nc">Promise</span><span class="p">(</span><span class="nx">resolve</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nf">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nf">resolve</span><span class="p">(</span><span class="dl">'</span><span class="s1">resolved</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="k">async</span> <span class="kd">function</span> <span class="nf">asyncCall</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">calling</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="nf">resolveAfter2Seconds</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// 2秒後に "resolved" と表示される</span>
+<span class="p">}</span>
+
+<span class="nf">asyncCall</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>このように、<code class="language-plaintext highlighter-rouge">async/await</code>を使うことで、非同期処理を同期処理のような見た目で簡潔に記述できます。</p>]]></content><author><name>puyokura</name></author><category term="Programming" /><category term="JavaScript" /><category term="JavaScript" /><category term="非同期処理" /><category term="Promise" /><summary type="html"><![CDATA[JavaScriptにおける非同期処理は、多くの開発者がつまずくポイントの一つです。特に、Promiseをさらに直感的に扱えるようにしたasync/await構文は、現代的なJavaScript開発に欠かせません。]]></summary></entry><entry><title type="html">CSS Flexbox完全ガイド：基本から応用まで</title><link href="https://puyokura.github.io/web-design/css/2025/08/10/css-flexbox-guide.html" rel="alternate" type="text/html" title="CSS Flexbox完全ガイド：基本から応用まで" /><published>2025-08-10T03:00:00+00:00</published><updated>2025-08-10T03:00:00+00:00</updated><id>https://puyokura.github.io/web-design/css/2025/08/10/css-flexbox-guide</id><content type="html" xml:base="https://puyokura.github.io/web-design/css/2025/08/10/css-flexbox-guide.html"><![CDATA[<p>CSS Flexboxは、1次元のレイアウトモデルであり、アイテム間のスペースの分配や整列を簡単に行うための強力な機能を提供します。</p>
+
+<h2 id="基本的なプロパティ">基本的なプロパティ</h2>
+
+<p>Flexboxを使いこなすには、親要素（コンテナ）と子要素（アイテム）のプロパティを理解する必要があります。</p>
+
+<ul>
+  <li><strong>親要素のプロパティ:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">display: flex;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">flex-direction: row | column;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">justify-content: center | space-between | ...;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">align-items: center | stretch | ...;</code></li>
+    </ul>
+  </li>
+  <li><strong>子要素のプロパティ:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">flex-grow: &lt;number&gt;;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">flex-shrink: &lt;number&gt;;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">flex-basis: &lt;length&gt; | auto;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>これらのプロパティを組み合わせることで、複雑なレイアウトも柔軟に構築できます。</p>]]></content><author><name>puyokura</name></author><category term="Web-Design" /><category term="CSS" /><category term="CSS" /><category term="Flexbox" /><category term="レイアウト" /><summary type="html"><![CDATA[CSS Flexboxは、1次元のレイアウトモデルであり、アイテム間のスペースの分配や整列を簡単に行うための強力な機能を提供します。]]></summary></entry><entry><title type="html">Python仮想環境のススメ：venvを使ってみよう</title><link href="https://puyokura.github.io/programming/python/2025/08/09/python-virtual-environments.html" rel="alternate" type="text/html" title="Python仮想環境のススメ：venvを使ってみよう" /><published>2025-08-09T04:00:00+00:00</published><updated>2025-08-09T04:00:00+00:00</updated><id>https://puyokura.github.io/programming/python/2025/08/09/python-virtual-environments</id><content type="html" xml:base="https://puyokura.github.io/programming/python/2025/08/09/python-virtual-environments.html"><![CDATA[<p>Pythonで開発を行う際、プロジェクトごとに独立した環境を用意することは非常に重要です。これにより、プロジェクト間の依存関係の衝突を防ぐことができます。Python 3.3以降では、<code class="language-plaintext highlighter-rouge">venv</code>モジュールが標準で提供されています。</p>
+
+<h2 id="仮想環境の作成と有効化">仮想環境の作成と有効化</h2>
+
+<ol>
+  <li><strong>作成:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> venv myenv
+</code></pre></div>    </div>
+  </li>
+  <li><strong>有効化 (Windows):</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></div>    </div>
+  </li>
+  <li><strong>有効化 (macOS/Linux):</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>myenv/bin/activate
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>仮想環境を有効化すると、<code class="language-plaintext highlighter-rouge">pip install</code>でインストールしたパッケージはその環境内にのみ保存されます。</p>]]></content><author><name>puyokura</name></author><category term="Programming" /><category term="Python" /><category term="Python" /><category term="venv" /><category term="仮想環境" /><summary type="html"><![CDATA[Pythonで開発を行う際、プロジェクトごとに独立した環境を用意することは非常に重要です。これにより、プロジェクト間の依存関係の衝突を防ぐことができます。Python 3.3以降では、venvモジュールが標準で提供されています。]]></summary></entry><entry><title type="html">REST APIの基本を学ぶ</title><link href="https://puyokura.github.io/web-development/api/2025/08/08/introduction-to-rest-apis.html" rel="alternate" type="text/html" title="REST APIの基本を学ぶ" /><published>2025-08-08T05:00:00+00:00</published><updated>2025-08-08T05:00:00+00:00</updated><id>https://puyokura.github.io/web-development/api/2025/08/08/introduction-to-rest-apis</id><content type="html" xml:base="https://puyokura.github.io/web-development/api/2025/08/08/introduction-to-rest-apis.html"><![CDATA[<p>REST (Representational State Transfer) は、Webサービスの設計原則の一つです。HTTPプロトコルをベースにしており、シンプルでスケーラブルなシステムを構築するのに適しています。</p>
+
+<h2 id="restの原則">RESTの原則</h2>
+
+<ul>
+  <li><strong>ステートレス:</strong> サーバーはクライアントの状態を保存しません。</li>
+  <li><strong>クライアント/サーバー分離:</strong> UIとデータストレージを分離します。</li>
+  <li><strong>キャッシュ可能性:</strong> レスポンスはキャッシュ可能であるべきです。</li>
+</ul>
+
+<p>一般的なHTTPメソッドと、それに対応する操作（CRUD）は以下の通りです。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">GET</code>: リソースの取得 (Read)</li>
+  <li><code class="language-plaintext highlighter-rouge">POST</code>: リソースの作成 (Create)</li>
+  <li><code class="language-plaintext highlighter-rouge">PUT</code>: リソースの更新 (Update)</li>
+  <li><code class="language-plaintext highlighter-rouge">DELETE</code>: リソースの削除 (Delete)</li>
+</ul>]]></content><author><name>puyokura</name></author><category term="Web-Development" /><category term="API" /><category term="REST" /><category term="API" /><category term="HTTP" /><summary type="html"><![CDATA[REST (Representational State Transfer) は、Webサービスの設計原則の一つです。HTTPプロトコルをベースにしており、シンプルでスケーラブルなシステムを構築するのに適しています。]]></summary></entry><entry><title type="html">開発効率が爆上がりするVS Code拡張機能10選</title><link href="https://puyokura.github.io/tools/editor/2025/08/07/favorite-vscode-extensions.html" rel="alternate" type="text/html" title="開発効率が爆上がりするVS Code拡張機能10選" /><published>2025-08-07T06:00:00+00:00</published><updated>2025-08-07T06:00:00+00:00</updated><id>https://puyokura.github.io/tools/editor/2025/08/07/favorite-vscode-extensions</id><content type="html" xml:base="https://puyokura.github.io/tools/editor/2025/08/07/favorite-vscode-extensions.html"><![CDATA[<p>Visual Studio Code (VS Code) は、豊富な拡張機能によってカスタマイズできるのが魅力です。ここでは、私が普段から愛用している開発効率を向上させる拡張機能をいくつか紹介します。</p>
+
+<ol>
+  <li><strong>Prettier - Code formatter:</strong> コードのフォーマットを自動で整形してくれます。</li>
+  <li><strong>ESLint:</strong> JavaScript/TypeScriptの静的解析ツールです。</li>
+  <li><strong>GitLens:</strong> Gitの履歴を可視化し、コードの変更履歴を追いやすくします。</li>
+  <li><strong>Docker:</strong> DockerコンテナやイメージをVS Codeから直接管理できます。</li>
+  <li><strong>Live Server:</strong> HTMLやCSSの変更を即座にブラウザに反映させるローカルサーバーを起動します。</li>
+</ol>
+
+<p>これらの拡張機能を導入するだけで、日々のコーディングが格段に快適になるはずです。</p>]]></content><author><name>puyokura</name></author><category term="Tools" /><category term="Editor" /><category term="VSCode" /><category term="拡張機能" /><category term="開発環境" /><summary type="html"><![CDATA[Visual Studio Code (VS Code) は、豊富な拡張機能によってカスタマイズできるのが魅力です。ここでは、私が普段から愛用している開発効率を向上させる拡張機能をいくつか紹介します。]]></summary></entry><entry><title type="html">SQL vs. NoSQL: データベース選択の勘所</title><link href="https://puyokura.github.io/database/2025/08/06/sql-vs-nosql.html" rel="alternate" type="text/html" title="SQL vs. NoSQL: データベース選択の勘所" /><published>2025-08-06T07:00:00+00:00</published><updated>2025-08-06T07:00:00+00:00</updated><id>https://puyokura.github.io/database/2025/08/06/sql-vs-nosql</id><content type="html" xml:base="https://puyokura.github.io/database/2025/08/06/sql-vs-nosql.html"><![CDATA[<p>アプリケーションを開発する際、データベースの選択は重要な意思決定の一つです。大きく分けて、リレーショナルデータベース（SQL）と非リレーショナルデータベース（NoSQL）の2種類があります。</p>
+
+<h2 id="sqlデータベース-例-mysql-postgresql">SQLデータベース (例: MySQL, PostgreSQL)</h2>
+
+<ul>
+  <li><strong>特徴:</strong>
+    <ul>
+      <li>厳格なスキーマを持つテーブル構造。</li>
+      <li>トランザクション（ACID特性）によるデータの一貫性保証。</li>
+      <li>複雑なクエリをSQLで実行可能。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="nosqlデータベース-例-mongodb-redis">NoSQLデータベース (例: MongoDB, Redis)</h2>
+
+<ul>
+  <li><strong>特徴:</strong>
+    <ul>
+      <li>柔軟なデータモデル（ドキュメント、キーバリューなど）。</li>
+      <li>水平方向のスケーラビリティに優れる。</li>
+      <li>大量の非構造化データを扱うのに適している。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>どちらが良いというわけではなく、アプリケーションの要件に応じて適切なデータベースを選択することが重要です。</p>]]></content><author><name>puyokura</name></author><category term="Database" /><category term="SQL" /><category term="NoSQL" /><category term="データベース" /><summary type="html"><![CDATA[アプリケーションを開発する際、データベースの選択は重要な意思決定の一つです。大きく分けて、リレーショナルデータベース（SQL）と非リレーショナルデータベース（NoSQL）の2種類があります。]]></summary></entry><entry><title type="html">今さら聞けないGitとGitHubの基本</title><link href="https://puyokura.github.io/tools/version-control/2025/08/05/how-to-use-git.html" rel="alternate" type="text/html" title="今さら聞けないGitとGitHubの基本" /><published>2025-08-05T08:00:00+00:00</published><updated>2025-08-05T08:00:00+00:00</updated><id>https://puyokura.github.io/tools/version-control/2025/08/05/how-to-use-git</id><content type="html" xml:base="https://puyokura.github.io/tools/version-control/2025/08/05/how-to-use-git.html"><![CDATA[<p>Gitは、プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムです。GitHubは、Gitを利用した開発を支援するWebサービスです。</p>
+
+<h2 id="基本的なgitコマンド">基本的なGitコマンド</h2>
+
+<p>日常的によく使うコマンドは以下の通りです。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git clone &lt;repository&gt;</code>: リモートリポジトリをローカルに複製します。</li>
+  <li><code class="language-plaintext highlighter-rouge">git add &lt;file&gt;</code>: ファイルの変更をステージングエリアに追加します。</li>
+  <li><code class="language-plaintext highlighter-rouge">git commit -m "message"</code>: ステージングした変更をローカルリポジトリに記録します。</li>
+  <li><code class="language-plaintext highlighter-rouge">git push</code>: ローカルリポジトリの変更をリモートリポジトリに送信します。</li>
+  <li><code class="language-plaintext highlighter-rouge">git pull</code>: リモートリポジトリの最新の変更を取得し、ローカルにマージします。</li>
+</ul>
+
+<p>これらのコマンドを覚えることが、バージョン管理の第一歩です。</p>]]></content><author><name>puyokura</name></author><category term="Tools" /><category term="Version-Control" /><category term="Git" /><category term="GitHub" /><category term="バージョン管理" /><summary type="html"><![CDATA[Gitは、プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムです。GitHubは、Gitを利用した開発を支援するWebサービスです。]]></summary></entry><entry><title type="html">Reactで簡単なカウンターアプリを作る</title><link href="https://puyokura.github.io/programming/javascript/2025/08/04/building-app-with-react.html" rel="alternate" type="text/html" title="Reactで簡単なカウンターアプリを作る" /><published>2025-08-04T09:00:00+00:00</published><updated>2025-08-04T09:00:00+00:00</updated><id>https://puyokura.github.io/programming/javascript/2025/08/04/building-app-with-react</id><content type="html" xml:base="https://puyokura.github.io/programming/javascript/2025/08/04/building-app-with-react.html"><![CDATA[<p>Reactは、ユーザーインターフェースを構築するための人気のJavaScriptライブラリです。コンポーネントベースの設計が特徴で、再利用性の高いUI部品を作成できます。</p>
+
+<p>ここでは、Reactの基本的なフックである<code class="language-plaintext highlighter-rouge">useState</code>を使って、簡単なカウンターアプリを作成します。</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nf">Counter</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// "count" という新しい state 変数を宣言します</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nf">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="k">return </span><span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>You clicked <span class="si">{</span><span class="nx">count</span><span class="si">}</span> times<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nf">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
+        Click me
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Counter</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>このコードは、クリックするたびに数字が増えるシンプルなカウンターを表示します。<code class="language-plaintext highlighter-rouge">useState</code>が、関数コンポーネント内で状態を保持する力を与えてくれます。</p>]]></content><author><name>puyokura</name></author><category term="Programming" /><category term="JavaScript" /><category term="React" /><category term="フロントエンド" /><category term="チュートリアル" /><summary type="html"><![CDATA[Reactは、ユーザーインターフェースを構築するための人気のJavaScriptライブラリです。コンポーネントベースの設計が特徴で、再利用性の高いUI部品を作成できます。]]></summary></entry></feed>

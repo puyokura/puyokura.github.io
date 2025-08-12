@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Docker入門：コンテナ化への第一歩</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <a class="site-title" href="/">puyokura's tech blog</a>
+      </div>
+      <nav class="UnderlineNav">
+        <div class="wrapper">
+          <a href="/" class="UnderlineNav-item ">Home</a>
+          <a href="/tags/" class="UnderlineNav-item ">Tags</a>
+          <a href="/about/" class="UnderlineNav-item ">About</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Docker入門：コンテナ化への第一歩</h1>
+    <p class="post-meta">2025年08月12日</p>
+  </header>
+
+  <div class="Box">
+    <div class="Box-body post-content">
+      <p>Dockerは、アプリケーションをコンテナと呼ばれる軽量なパッケージにまとめて、どんな環境でも迅速かつ確実に実行するためのプラットフォームです。</p>
+
+<h2 id="なぜdockerを使うのか">なぜDockerを使うのか？</h2>
+
+<ul>
+  <li><strong>環境の統一:</strong> 「自分のPCでは動いたのに、サーバーでは動かない」といった問題を解決します。</li>
+  <li><strong>迅速なデプロイ:</strong> コンテナは軽量で、起動も高速です。</li>
+  <li><strong>スケーラビリティ:</strong> 必要に応じてコンテナの数を簡単に増減できます。</li>
+</ul>
+
+<p>以下は簡単なDockerfileの例です。</p>
+
+<div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ベースイメージを指定</span>
+<span class="k">FROM</span><span class="s"> node:18</span>
+
+<span class="c"># アプリケーションのディレクトリを作成</span>
+<span class="k">WORKDIR</span><span class="s"> /usr/src/app</span>
+
+<span class="c"># アプリケーションの依存関係をインストール</span>
+<span class="k">COPY</span><span class="s"> package*.json ./</span>
+<span class="k">RUN </span>npm <span class="nb">install</span>
+
+<span class="c"># アプリケーションのソースをバンドル</span>
+<span class="k">COPY</span><span class="s"> . .</span>
+
+<span class="c"># アプリケーションを公開するポート</span>
+<span class="k">EXPOSE</span><span class="s"> 3000</span>
+
+<span class="c"># アプリケーションを起動</span>
+<span class="k">CMD</span><span class="s"> [ "node", "server.js" ]</span>
+</code></pre></div></div>
+
+    </div>
+  </div>
+
+  
+  <div class="post-tags">
+    <h3>Tags:</h3>
+    
+      <a href="/tags/#docker" class="Label">Docker</a>
+    
+      <a href="/tags/#コンテナ" class="Label">コンテナ</a>
+    
+      <a href="/tags/#仮想化" class="Label">仮想化</a>
+    
+  </div>
+  
+
+</article>
+
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>&copy; 2025 puyokura.</p>
+      </div>
+    </footer>
+  </body>
+</html>

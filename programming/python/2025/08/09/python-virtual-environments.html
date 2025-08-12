@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python仮想環境のススメ：venvを使ってみよう</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <a class="site-title" href="/">puyokura's tech blog</a>
+      </div>
+      <nav class="UnderlineNav">
+        <div class="wrapper">
+          <a href="/" class="UnderlineNav-item ">Home</a>
+          <a href="/tags/" class="UnderlineNav-item ">Tags</a>
+          <a href="/about/" class="UnderlineNav-item ">About</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Python仮想環境のススメ：venvを使ってみよう</h1>
+    <p class="post-meta">2025年08月09日</p>
+  </header>
+
+  <div class="Box">
+    <div class="Box-body post-content">
+      <p>Pythonで開発を行う際、プロジェクトごとに独立した環境を用意することは非常に重要です。これにより、プロジェクト間の依存関係の衝突を防ぐことができます。Python 3.3以降では、<code class="language-plaintext highlighter-rouge">venv</code>モジュールが標準で提供されています。</p>
+
+<h2 id="仮想環境の作成と有効化">仮想環境の作成と有効化</h2>
+
+<ol>
+  <li><strong>作成:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> venv myenv
+</code></pre></div>    </div>
+  </li>
+  <li><strong>有効化 (Windows):</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myenv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></div>    </div>
+  </li>
+  <li><strong>有効化 (macOS/Linux):</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>myenv/bin/activate
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>仮想環境を有効化すると、<code class="language-plaintext highlighter-rouge">pip install</code>でインストールしたパッケージはその環境内にのみ保存されます。</p>
+
+    </div>
+  </div>
+
+  
+  <div class="post-tags">
+    <h3>Tags:</h3>
+    
+      <a href="/tags/#python" class="Label">Python</a>
+    
+      <a href="/tags/#venv" class="Label">venv</a>
+    
+      <a href="/tags/#仮想環境" class="Label">仮想環境</a>
+    
+  </div>
+  
+
+</article>
+
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>&copy; 2025 puyokura.</p>
+      </div>
+    </footer>
+  </body>
+</html>
