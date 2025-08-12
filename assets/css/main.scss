@@ -17,6 +17,7 @@ $sans-serif: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", Mei
 
 body {
   font-family: $serif;
+  line-height: 1.8; /* 行間を広げる */
 }
 
 .masthead {
@@ -40,6 +41,21 @@ body {
 }
 
 .page__title {
-  font-size: 2em;
+  font-size: 2.2em; /* 少し大きく */
   font-family: $serif;
+  line-height: 1.4;
+  margin-bottom: 1.5em;
+}
+
+.page__content {
+  p, li {
+    font-size: 16px; /* note.comの標準的な文字サイズ */
+    margin-bottom: 1.8em; /* 段落間の余白を広げる */
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin-top: 2.5em; /* 見出しの上の余白を広げる */
+    margin-bottom: 1.2em;
+    font-family: $sans-serif; /* 見出しはゴシック体の方が見やすい場合も */
+  }
 }
