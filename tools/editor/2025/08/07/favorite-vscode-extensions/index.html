@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="ja-JP">
+<html lang="ja-JP" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>開発効率が爆上がりするVS Code拡張機能10選</title>
-    <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+    <!-- Primer CSS -->
+    <link href="https://unpkg.com/@primer/css@^20.0.0/dist/primer.css" rel="stylesheet" />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Octicons -->
+    <script type="module" src="https://unpkg.com/@primer/octicons@^18.0.0/dist/index.js"></script>
   </head>
   <body>
-    <header class="Header">
+    <div class="page">
+      <div class="Header">
   <div class="Header-item">
     <a href="/" class="Header-link f4 d-flex flex-items-center">
+      <!-- Octicon for repo -->
+      <svg height="16" class="octicon octicon-repo mr-2" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-1 1v2h1.75a.75.75 0 010 1.5H4.5A2.5 2.5 0 012 13.5V2.5zM3.5 1h-1A1.5 1.5 0 001 2.5v11A1.5 1.5 0 002.5 15h.5a.75.75 0 010-1.5h-.5a.5.5 0 01-.5-.5v-2a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-.5a.75.75 0 010 1.5h.5A1.5 1.5 0 0014 13.5v-11A1.5 1.5 0 0012.5 1h-8A1.5 1.5 0 003.5 1zM5 6.25a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5A.75.75 0 015 6.25z"></path></svg>
       <span>puyokura's tech blog</span>
     </a>
   </div>
   <div class="Header-item Header-item--full"></div>
-  <div class="Header-item">
-    <a href="/about/" class="Header-link">About</a>
-  </div>
-  <div class="Header-item">
-    <a href="/tags/" class="Header-link">Tags</a>
-  </div>
-</header>
-    <main class="container-lg p-3 p-md-4 p-lg-5">
-      <div class="d-flex flex-wrap flex-lg-nowrap">
-        <div class="flex-auto col-lg-9 mr-lg-5">
-          <article class="Box">
-  <div class="Box-header">
-    <h1 class="Box-title">開発効率が爆上がりするVS Code拡張機能10選</h1>
-    <p class="text-gray-light mb-0 mt-1">2025年08月07日</p>
-  </div>
-  <div class="Box-body markdown-body">
-    <p>Visual Studio Code (VS Code) は、豊富な拡張機能によってカスタマイズできるのが魅力です。ここでは、私が普段から愛用している開発効率を向上させる拡張機能をいくつか紹介します。</p>
+  <nav class="d-flex">
+  <a href="/" class="Header-link mr-3">Home</a>
+  <a href="/about.html" class="Header-link mr-3">About</a>
+  <a href="/archive.html" class="Header-link">Archive</a>
+</nav>
+</div>
+      <main class="container-lg p-responsive">
+        <article class="markdown-body">
+  <h1>開発効率が爆上がりするVS Code拡張機能10選</h1>
+  <p class="f6 color-fg-muted">
+    <time datetime="2025-08-07T06:00:00+00:00">Aug 7, 2025</time>
+  </p>
+
+  <p>Visual Studio Code (VS Code) は、豊富な拡張機能によってカスタマイズできるのが魅力です。ここでは、私が普段から愛用している開発効率を向上させる拡張機能をいくつか紹介します。</p>
 
 <ol>
   <li><strong>Prettier - Code formatter:</strong> コードのフォーマットを自動で整形してくれます。</li>
@@ -43,26 +47,18 @@
 
 <p>これらの拡張機能を導入するだけで、日々のコーディングが格段に快適になるはずです。</p>
 
-  </div>
+
 </article>
-        </div>
-        <div class="flex-shrink-0 col-lg-3">
-          <div class="Box">
-  <div class="Box-header">
-    <h2 class="Box-title">About</h2>
-  </div>
-  <div class="Box-body">
-    <p>技術的な知見や備忘録を公開するブログ。</p>
+
+      </main>
+      <div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-items-center pb-2 f6 color-fg-muted border-top color-border-muted">
+    <div class="d-flex flex-items-center">
+      <span class="mr-3">&copy; 2025 puyokura</span>
+    </div>
   </div>
 </div>
-
-        </div>
-      </div>
-    </main>
-    <footer class="footer container-lg px-3">
-  <div class="d-flex flex-justify-center">
-    <span class="f6 text-gray">&copy; 2025 puyokura.</span>
-  </div>
-</footer>
+    </div>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
