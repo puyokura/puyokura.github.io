@@ -21,6 +21,9 @@ baseurl: ""
 repository: "puyokura/puyokura.github.io"
 locale: "ja-JP" # サイトの言語を日本語に設定
 
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+
 # Build settings
 plugins:
   - jekyll-feed
