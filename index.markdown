@@ -1,17 +1,15 @@
 ---
-# このファイルにコンテンツやカスタムFront Matterを自由に追加できます。
-# レイアウトを変更するには、https://jekyllrb.com/docs/themes/#overriding-theme-defaults を参照してください。
-
 layout: default
 ---
 
-<h1>記事一覧</h1>
-
-<ul>
+<div class="Box">
+  <div class="Box-header">
+    <h3 class="Box-title">記事一覧</h3>
+  </div>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
+    <div class="Box-row">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p class="text-gray-light">{{ post.date | date: "%Y年%m月%d日" }}</p>
+    </div>
   {% endfor %}
-</ul>
+</div>
