@@ -15,11 +15,13 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2' # or your preferred Ruby version
-          bundler-cache: true
+          ruby-version: '3.2'
 
-      - name: Add Linux platform to Gemfile.lock
-        run: bundle lock --add-platform x86_64-linux
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle lock --add-platform x86_64-linux
+          bundle install --jobs 4 --retry 3
 
       - name: Build Jekyll Site
         run: bundle exec jekyll build
