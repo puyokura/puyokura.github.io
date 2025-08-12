@@ -22,86 +22,9 @@ repository: "puyokura/puyokura.github.io"
 locale: "ja-JP" # サイトの言語を日本語に設定
 
 # Build settings
-# theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-# Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
 
-# Site Author
+# Author
 author:
   name: "puyokura"
-  avatar: "/assets/images/bio-photo.jpg" # ご自身の画像へのパスに変更してください
-  bio: "Software Engineer"
-  location: "Tokyo, Japan"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/puyokura"
-
-# Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/puyokura"
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-      mathjax: true # 数式表示を有効化
-  # _pages
-  - scope:
-      path: "**/pages/*"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-# Pagination
-paginate: 5
-paginate_path: /page:num/
-
-# Search
-search: true
-
-# Analytics
-analytics:
-  provider: false # "google-gtag"
-  google:
-    tracking_id: ""
-    anonymize_ip: false
-
-# Comments
-comments:
-  provider: "disqus" # Disqusを有効化
-  disqus:
-    shortname: "your-disqus-shortname" # ご自身のDisqus shortnameに変更してください
-
-# Navigation
-masthead_nav:
-  - title: "記事一覧"
-    url: /_posts/
-  - title: "カテゴリ"
-    url: /categories/
-  - title: "タグ"
-    url: /tags/
-  - title: "概要"
-    url: /about/

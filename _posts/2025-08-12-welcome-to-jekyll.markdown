@@ -1,14 +1,9 @@
 ---
-layout: single
+layout: post
 title:  "Jekyllへようこそ！"
 date:   2025-08-12 16:21:47 +0900
-categories:
-  - ブログ
-tags:
-  - Jekyll
-  - サンプル
-toc: true
-toc_sticky: true
+categories: ブログ
+tags: [Jekyll, サンプル]
 ---
 
 この記事は `_posts` ディレクトリにあります。ファイルを編集してサイトを再ビルドすると、変更が反映されます。サイトの再ビルドには様々な方法がありますが、最も一般的なのは `bundle exec jekyll serve` コマンドを実行する方法です。これによりWebサーバーが起動し、ファイルが更新されるたびにサイトが自動的に再生成されます。

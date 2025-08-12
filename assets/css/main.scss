@@ -1,61 +1,121 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Jekyllが必要とするFront Matter
 ---
 
 @charset "utf-8";
 
-// Define a font stack that prioritizes Japanese fonts
-$serif: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-$sans-serif: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", Meiryo, "メイリオ", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+// 変数
+$base-font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+$base-font-size:   16px;
+$base-line-height: 1.8;
+$content-width:    720px;
+$text-color:       #333;
+$background-color: #fff;
+$grey-color:       #828282;
 
-// Import the Minimal Mistakes theme styles
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-
-
-/* --- note.com-like Customizations --- */
+// 基本的なリセットと設定
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: $serif;
-  line-height: 1.8; /* 行間を広げる */
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.masthead {
-  background-color: #fff !important;
+.wrapper {
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// ヘッダー
+.site-header {
   border-bottom: 1px solid #eee;
-}
+  padding: 20px 0;
 
-.masthead__inner-wrap {
-  .masthead__menu-item {
-    color: #333 !important;
-  }
-  .masthead__title a {
-    color: #333 !important;
-  }
-}
-
-#main {
-  max-width: 720px;
-  margin: 0 auto;
-  padding-top: 2em;
-}
-
-.page__title {
-  font-size: 2.2em; /* 少し大きく */
-  font-family: $serif;
-  line-height: 1.4;
-  margin-bottom: 1.5em;
-}
-
-.page__content {
-  p, li {
-    font-size: 16px; /* note.comの標準的な文字サイズ */
-    margin-bottom: 1.8em; /* 段落間の余白を広げる */
+  .site-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $text-color;
+    text-decoration: none;
   }
 
-  h2, h3, h4, h5, h6 {
-    margin-top: 2.5em; /* 見出しの上の余白を広げる */
-    margin-bottom: 1.2em;
-    font-family: $sans-serif; /* 見出しはゴシック体の方が見やすい場合も */
+  .site-nav {
+    float: right;
+    a {
+      color: $grey-color;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+  }
+}
+
+// メインコンテンツ
+.page-content {
+  padding: 40px 0;
+}
+
+// フッター
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  font-size: 0.8em;
+  color: $grey-color;
+  text-align: center;
+}
+
+// 記事のスタイル
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: $grey-color;
+}
+
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif; // 見出しはゴシック体
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: #1a73e8; // リンク色
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  code {
+    background-color: #f3f3f3;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
   }
 }
