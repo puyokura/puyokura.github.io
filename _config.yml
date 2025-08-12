@@ -25,6 +25,13 @@ locale: "ja-JP" # サイトの言語を日本語に設定
 plugins:
   - jekyll-feed
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
 # Author
 author:
   name: "puyokura"
