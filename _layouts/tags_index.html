@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="post-header">
+  <h1 class="post-title">{{ page.title | escape }}</h1>
+</div>
+
+<div class="Box">
+  {% for tag in site.tags | sort %}
+    <div class="Box-row">
+      <h2 id="{{ tag[0] | slugify }}" class="tag-name">{{ tag[0] }}</h2>
+      <ul class="post-list-by-tag">
+        {% for post in tag[1] %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

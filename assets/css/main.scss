@@ -212,6 +212,29 @@ a {
     margin-right: 0.5em;
   }
 }
+
+// --- Tags Index Page --- //
+.tag-name {
+  font-size: 1.5em;
+  font-family: $font-family-sans-serif;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.post-list-by-tag {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  .post-meta {
+    margin-left: 1em;
+    font-size: 0.8em;
+    color: var(--color-text-secondary);
+  }
+}
 .Box {
   background-color: var(--color-bg-primary);
   border: 1px solid var(--color-border-primary);
