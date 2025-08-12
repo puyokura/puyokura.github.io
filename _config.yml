@@ -24,6 +24,7 @@ locale: "ja-JP" # サイトの言語を日本語に設定
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Markdown Processing
 kramdown:
@@ -35,3 +36,7 @@ kramdown:
 # Author
 author:
   name: "puyokura"
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"

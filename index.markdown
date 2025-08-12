@@ -4,12 +4,28 @@ layout: default
 
 <div class="Box">
   <div class="Box-header">
-    <h3 class="Box-title">記事一覧</h3>
+    <h3 class="Box-title">最新の記事</h3>
   </div>
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <div class="Box-row">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <p class="text-gray-light">{{ post.date | date: "%Y年%m月%d日" }}</p>
     </div>
   {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="btn">前へ</a>
+  {% else %}
+    <span class="btn btn-disabled">前へ</span>
+  {% endif %}
+
+  <span class="page-info">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="btn">次へ</a>
+  {% else %}
+    <span class="btn btn-disabled">次へ</span>
+  {% endif %}
 </div>
