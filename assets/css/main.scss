@@ -60,6 +60,15 @@ body {
   padding-right: 40px;
 }
 
+// --- Global element styles ---
+a {
+  color: var(--color-link-primary);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // --- Header --- //
 .site-header {
   background-color: var(--color-bg-secondary);
@@ -136,14 +145,6 @@ body {
   p, ul, ol {
     margin-top: 0;
     margin-bottom: 16px;
-  }
-
-  a {
-    color: var(--color-link-primary);
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   code {
