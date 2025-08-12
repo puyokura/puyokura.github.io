@@ -1,0 +1,367 @@
+2025-08-12T11:09:01.6879748Z Current runner version: '2.327.1'
+2025-08-12T11:09:01.6902101Z ##[group]Runner Image Provisioner
+2025-08-12T11:09:01.6902894Z Hosted Compute Agent
+2025-08-12T11:09:01.6903464Z Version: 20250711.363
+2025-08-12T11:09:01.6904062Z Commit: 6785254374ce925a23743850c1cb91912ce5c14c
+2025-08-12T11:09:01.6904747Z Build Date: 2025-07-11T20:04:25Z
+2025-08-12T11:09:01.6905369Z ##[endgroup]
+2025-08-12T11:09:01.6905942Z ##[group]Operating System
+2025-08-12T11:09:01.6906694Z Ubuntu
+2025-08-12T11:09:01.6907299Z 24.04.2
+2025-08-12T11:09:01.6907740Z LTS
+2025-08-12T11:09:01.6908183Z ##[endgroup]
+2025-08-12T11:09:01.6908607Z ##[group]Runner Image
+2025-08-12T11:09:01.6909236Z Image: ubuntu-24.04
+2025-08-12T11:09:01.6909694Z Version: 20250804.2.0
+2025-08-12T11:09:01.6910672Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250804.2/images/ubuntu/Ubuntu2404-Readme.md
+2025-08-12T11:09:01.6912229Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250804.2
+2025-08-12T11:09:01.6913235Z ##[endgroup]
+2025-08-12T11:09:01.6914265Z ##[group]GITHUB_TOKEN Permissions
+2025-08-12T11:09:01.6916006Z Contents: read
+2025-08-12T11:09:01.6916877Z Metadata: read
+2025-08-12T11:09:01.6917372Z Packages: read
+2025-08-12T11:09:01.6917821Z ##[endgroup]
+2025-08-12T11:09:01.6919890Z Secret source: Actions
+2025-08-12T11:09:01.6920543Z Prepare workflow directory
+2025-08-12T11:09:01.7294115Z Prepare all required actions
+2025-08-12T11:09:01.7331617Z Getting action download info
+2025-08-12T11:09:02.3400540Z ##[group]Download immutable action package 'actions/checkout@v2'
+2025-08-12T11:09:02.3401748Z Version: 2.7.0
+2025-08-12T11:09:02.3402718Z Digest: sha256:95d28907bc868c0bab52f05f1f84cf8416c9415fba4c92519bc0b83bdce1eae3
+2025-08-12T11:09:02.3403816Z Source commit SHA: ee0669bd1cc54295c223e0bb666b733df41de1c5
+2025-08-12T11:09:02.3404625Z ##[endgroup]
+2025-08-12T11:09:02.4267623Z Download action repository 'ruby/setup-ruby@v1' (SHA:829114fc20da43a41d27359103ec7a63020954d4)
+2025-08-12T11:09:03.1904855Z Download action repository 'peaceiris/actions-gh-pages@v3' (SHA:373f7f263a76c20808c831209c920827a82a2847)
+2025-08-12T11:09:04.1190164Z Complete job name: build_and_deploy
+2025-08-12T11:09:04.1940345Z ##[group]Run actions/checkout@v2
+2025-08-12T11:09:04.1941616Z with:
+2025-08-12T11:09:04.1942378Z   repository: puyokura/puyokura.github.io
+2025-08-12T11:09:04.1943657Z   token: ***
+2025-08-12T11:09:04.1944351Z   ssh-strict: true
+2025-08-12T11:09:04.1945104Z   persist-credentials: true
+2025-08-12T11:09:04.1945955Z   clean: true
+2025-08-12T11:09:04.1946816Z   fetch-depth: 1
+2025-08-12T11:09:04.1947530Z   lfs: false
+2025-08-12T11:09:04.1948201Z   submodules: false
+2025-08-12T11:09:04.1948961Z   set-safe-directory: true
+2025-08-12T11:09:04.1950043Z ##[endgroup]
+2025-08-12T11:09:04.2970727Z Syncing repository: puyokura/puyokura.github.io
+2025-08-12T11:09:04.2973316Z ##[group]Getting Git version info
+2025-08-12T11:09:04.2974864Z Working directory is '/home/runner/work/puyokura.github.io/puyokura.github.io'
+2025-08-12T11:09:04.2977199Z [command]/usr/bin/git version
+2025-08-12T11:09:04.2998266Z git version 2.50.1
+2025-08-12T11:09:04.3022930Z ##[endgroup]
+2025-08-12T11:09:04.3037274Z Temporarily overriding HOME='/home/runner/work/_temp/56f4dde4-d53c-454a-a378-e12507d9ba44' before making global git config changes
+2025-08-12T11:09:04.3040305Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-12T11:09:04.3042810Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/puyokura.github.io/puyokura.github.io
+2025-08-12T11:09:04.3076161Z Deleting the contents of '/home/runner/work/puyokura.github.io/puyokura.github.io'
+2025-08-12T11:09:04.3079546Z ##[group]Initializing the repository
+2025-08-12T11:09:04.3082836Z [command]/usr/bin/git init /home/runner/work/puyokura.github.io/puyokura.github.io
+2025-08-12T11:09:04.3141172Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-12T11:09:04.3143830Z hint: is subject to change. To configure the initial branch name to use in all
+2025-08-12T11:09:04.3147516Z hint: of your new repositories, which will suppress this warning, call:
+2025-08-12T11:09:04.3149971Z hint:
+2025-08-12T11:09:04.3151487Z hint: 	git config --global init.defaultBranch <name>
+2025-08-12T11:09:04.3153409Z hint:
+2025-08-12T11:09:04.3155217Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-12T11:09:04.3158452Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-12T11:09:04.3160721Z hint:
+2025-08-12T11:09:04.3161458Z hint: 	git branch -m <name>
+2025-08-12T11:09:04.3162289Z hint:
+2025-08-12T11:09:04.3163430Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-08-12T11:09:04.3165655Z Initialized empty Git repository in /home/runner/work/puyokura.github.io/puyokura.github.io/.git/
+2025-08-12T11:09:04.3169385Z [command]/usr/bin/git remote add origin https://github.com/puyokura/puyokura.github.io
+2025-08-12T11:09:04.3187683Z ##[endgroup]
+2025-08-12T11:09:04.3189971Z ##[group]Disabling automatic garbage collection
+2025-08-12T11:09:04.3192099Z [command]/usr/bin/git config --local gc.auto 0
+2025-08-12T11:09:04.3221312Z ##[endgroup]
+2025-08-12T11:09:04.3223557Z ##[group]Setting up auth
+2025-08-12T11:09:04.3228880Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-12T11:09:04.3259359Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-12T11:09:04.3509665Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-12T11:09:04.3538351Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-12T11:09:04.3754763Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-08-12T11:09:04.3788531Z ##[endgroup]
+2025-08-12T11:09:04.3789870Z ##[group]Fetching the repository
+2025-08-12T11:09:04.3797047Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +8b861eaa3275fa16624e69921f58fe915ae9ac6d:refs/remotes/origin/main
+2025-08-12T11:09:04.7647968Z remote: Enumerating objects: 22, done.        
+2025-08-12T11:09:04.7649980Z remote: Counting objects:   4% (1/22)        
+2025-08-12T11:09:04.7651890Z remote: Counting objects:   9% (2/22)        
+2025-08-12T11:09:04.7653911Z remote: Counting objects:  13% (3/22)        
+2025-08-12T11:09:04.7655867Z remote: Counting objects:  18% (4/22)        
+2025-08-12T11:09:04.7658102Z remote: Counting objects:  22% (5/22)        
+2025-08-12T11:09:04.7660071Z remote: Counting objects:  27% (6/22)        
+2025-08-12T11:09:04.7662009Z remote: Counting objects:  31% (7/22)        
+2025-08-12T11:09:04.7663892Z remote: Counting objects:  36% (8/22)        
+2025-08-12T11:09:04.7665824Z remote: Counting objects:  40% (9/22)        
+2025-08-12T11:09:04.7667939Z remote: Counting objects:  45% (10/22)        
+2025-08-12T11:09:04.7669846Z remote: Counting objects:  50% (11/22)        
+2025-08-12T11:09:04.7671923Z remote: Counting objects:  54% (12/22)        
+2025-08-12T11:09:04.7673919Z remote: Counting objects:  59% (13/22)        
+2025-08-12T11:09:04.7675905Z remote: Counting objects:  63% (14/22)        
+2025-08-12T11:09:04.7678084Z remote: Counting objects:  68% (15/22)        
+2025-08-12T11:09:04.7680063Z remote: Counting objects:  72% (16/22)        
+2025-08-12T11:09:04.7682038Z remote: Counting objects:  77% (17/22)        
+2025-08-12T11:09:04.7684024Z remote: Counting objects:  81% (18/22)        
+2025-08-12T11:09:04.7685954Z remote: Counting objects:  86% (19/22)        
+2025-08-12T11:09:04.7688231Z remote: Counting objects:  90% (20/22)        
+2025-08-12T11:09:04.7690214Z remote: Counting objects:  95% (21/22)        
+2025-08-12T11:09:04.7692527Z remote: Counting objects: 100% (22/22)        
+2025-08-12T11:09:04.7694595Z remote: Counting objects: 100% (22/22), done.        
+2025-08-12T11:09:04.7696926Z remote: Compressing objects:   5% (1/18)        
+2025-08-12T11:09:04.7698976Z remote: Compressing objects:  11% (2/18)        
+2025-08-12T11:09:04.7701036Z remote: Compressing objects:  16% (3/18)        
+2025-08-12T11:09:04.7703126Z remote: Compressing objects:  22% (4/18)        
+2025-08-12T11:09:04.7705150Z remote: Compressing objects:  27% (5/18)        
+2025-08-12T11:09:04.7707473Z remote: Compressing objects:  33% (6/18)        
+2025-08-12T11:09:04.7709550Z remote: Compressing objects:  38% (7/18)        
+2025-08-12T11:09:04.7711625Z remote: Compressing objects:  44% (8/18)        
+2025-08-12T11:09:04.7713688Z remote: Compressing objects:  50% (9/18)        
+2025-08-12T11:09:04.7715733Z remote: Compressing objects:  55% (10/18)        
+2025-08-12T11:09:04.8075722Z remote: Compressing objects:  61% (11/18)        
+2025-08-12T11:09:04.8077422Z remote: Compressing objects:  66% (12/18)        
+2025-08-12T11:09:04.8078766Z remote: Compressing objects:  72% (13/18)        
+2025-08-12T11:09:04.8080108Z remote: Compressing objects:  77% (14/18)        
+2025-08-12T11:09:04.8081425Z remote: Compressing objects:  83% (15/18)        
+2025-08-12T11:09:04.8082738Z remote: Compressing objects:  88% (16/18)        
+2025-08-12T11:09:04.8084046Z remote: Compressing objects:  94% (17/18)        
+2025-08-12T11:09:04.8085358Z remote: Compressing objects: 100% (18/18)        
+2025-08-12T11:09:04.8086922Z remote: Compressing objects: 100% (18/18), done.        
+2025-08-12T11:09:04.8104177Z remote: Total 22 (delta 0), reused 12 (delta 0), pack-reused 0 (from 0)        
+2025-08-12T11:09:04.8192173Z From https://github.com/puyokura/puyokura.github.io
+2025-08-12T11:09:04.8193704Z  * [new ref]         8b861eaa3275fa16624e69921f58fe915ae9ac6d -> origin/main
+2025-08-12T11:09:04.8218875Z ##[endgroup]
+2025-08-12T11:09:04.8221351Z ##[group]Determining the checkout info
+2025-08-12T11:09:04.8223597Z ##[endgroup]
+2025-08-12T11:09:04.8224827Z ##[group]Checking out the ref
+2025-08-12T11:09:04.8227397Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-08-12T11:09:04.8280835Z Switched to a new branch 'main'
+2025-08-12T11:09:04.8283376Z branch 'main' set up to track 'origin/main'.
+2025-08-12T11:09:04.8295362Z ##[endgroup]
+2025-08-12T11:09:04.8327395Z [command]/usr/bin/git log -1 --format='%H'
+2025-08-12T11:09:04.8351110Z '8b861eaa3275fa16624e69921f58fe915ae9ac6d'
+2025-08-12T11:09:04.8696546Z ##[group]Run ruby/setup-ruby@v1
+2025-08-12T11:09:04.8697510Z with:
+2025-08-12T11:09:04.8698155Z   ruby-version: 3.2
+2025-08-12T11:09:04.8698905Z   bundler-cache: false
+2025-08-12T11:09:04.8699659Z ##[endgroup]
+2025-08-12T11:09:05.0396832Z ##[group]Modifying PATH
+2025-08-12T11:09:05.0403281Z Entries added to PATH to use selected Ruby:
+2025-08-12T11:09:05.0409385Z   /opt/hostedtoolcache/Ruby/3.2.9/x64/bin
+2025-08-12T11:09:05.0419076Z ##[endgroup]
+2025-08-12T11:09:05.0421330Z ##[group]Print Ruby version
+2025-08-12T11:09:05.0485340Z [command]/opt/hostedtoolcache/Ruby/3.2.9/x64/bin/ruby --version
+2025-08-12T11:09:05.3573000Z ruby 3.2.9 (2025-07-24 revision 8f611e0c46) [x86_64-linux]
+2025-08-12T11:09:05.3612787Z Took   0.32 seconds
+2025-08-12T11:09:05.3613918Z ##[endgroup]
+2025-08-12T11:09:05.3617618Z ##[group]Installing Bundler
+2025-08-12T11:09:05.3620994Z Using Bundler 2.7.1 from Gemfile.lock BUNDLED WITH 2.7.1
+2025-08-12T11:09:05.3625671Z [command]/opt/hostedtoolcache/Ruby/3.2.9/x64/bin/gem install bundler -v 2.7.1
+2025-08-12T11:09:06.7327334Z Successfully installed bundler-2.7.1
+2025-08-12T11:09:06.7327826Z 1 gem installed
+2025-08-12T11:09:06.7404820Z Took   1.38 seconds
+2025-08-12T11:09:06.7406073Z ##[endgroup]
+2025-08-12T11:09:06.7500429Z ##[group]Run rm -f Gemfile.lock
+2025-08-12T11:09:06.7500792Z [36;1mrm -f Gemfile.lock[0m
+2025-08-12T11:09:06.7501034Z [36;1mgem install bundler[0m
+2025-08-12T11:09:06.7501277Z [36;1mbundle install --jobs 4 --retry 3[0m
+2025-08-12T11:09:06.7568220Z shell: /usr/bin/bash -e {0}
+2025-08-12T11:09:06.7568491Z ##[endgroup]
+2025-08-12T11:09:07.2268537Z Successfully installed bundler-2.7.1
+2025-08-12T11:09:07.2269199Z 1 gem installed
+2025-08-12T11:09:07.6682986Z [DEPRECATED] Platform :mingw, :x64_mingw, :mswin is deprecated. Please use platform :windows instead.
+2025-08-12T11:09:09.5011527Z Fetching gem metadata from https://rubygems.org/...........
+2025-08-12T11:09:09.5291492Z Resolving dependencies...
+2025-08-12T11:09:09.8122458Z Fetching rake 13.3.0
+2025-08-12T11:09:09.8877603Z Installing rake 13.3.0
+2025-08-12T11:09:09.9012061Z Fetching public_suffix 6.0.2
+2025-08-12T11:09:09.9023141Z Fetching bigdecimal 3.2.2
+2025-08-12T11:09:09.9026676Z Fetching colorator 1.1.0
+2025-08-12T11:09:09.9028728Z Fetching concurrent-ruby 1.3.5
+2025-08-12T11:09:09.9156038Z Installing public_suffix 6.0.2
+2025-08-12T11:09:09.9217794Z Fetching eventmachine 1.2.7
+2025-08-12T11:09:09.9254867Z Installing bigdecimal 3.2.2 with native extensions
+2025-08-12T11:09:09.9336635Z Installing colorator 1.1.0
+2025-08-12T11:09:09.9386197Z Fetching http_parser.rb 0.8.0
+2025-08-12T11:09:09.9717789Z Installing concurrent-ruby 1.3.5
+2025-08-12T11:09:09.9906262Z Installing eventmachine 1.2.7 with native extensions
+2025-08-12T11:09:09.9933574Z Installing http_parser.rb 0.8.0 with native extensions
+2025-08-12T11:09:10.1060104Z Fetching ffi 1.17.2 (x86_64-linux-gnu)
+2025-08-12T11:09:10.1666745Z Installing ffi 1.17.2 (x86_64-linux-gnu)
+2025-08-12T11:09:10.2249164Z Fetching forwardable-extended 2.6.0
+2025-08-12T11:09:10.2397692Z Installing forwardable-extended 2.6.0
+2025-08-12T11:09:10.2405295Z Fetching rb-fsevent 0.11.2
+2025-08-12T11:09:10.2582660Z Installing rb-fsevent 0.11.2
+2025-08-12T11:09:10.2680609Z Fetching rexml 3.4.1
+2025-08-12T11:09:10.2885266Z Installing rexml 3.4.1
+2025-08-12T11:09:10.3051872Z Fetching liquid 4.0.4
+2025-08-12T11:09:10.3208099Z Installing liquid 4.0.4
+2025-08-12T11:09:10.3413849Z Fetching mercenary 0.4.0
+2025-08-12T11:09:10.3529870Z Installing mercenary 0.4.0
+2025-08-12T11:09:10.3603212Z Fetching rouge 4.6.0
+2025-08-12T11:09:10.3890281Z Installing rouge 4.6.0
+2025-08-12T11:09:10.5107365Z Fetching safe_yaml 1.0.5
+2025-08-12T11:09:10.5226123Z Installing safe_yaml 1.0.5
+2025-08-12T11:09:10.5380406Z Fetching unicode-display_width 2.6.0
+2025-08-12T11:09:10.5492719Z Installing unicode-display_width 2.6.0
+2025-08-12T11:09:10.5540298Z Fetching webrick 1.9.1
+2025-08-12T11:09:10.5672678Z Installing webrick 1.9.1
+2025-08-12T11:09:10.5855395Z Fetching addressable 2.8.7
+2025-08-12T11:09:10.6006607Z Installing addressable 2.8.7
+2025-08-12T11:09:10.6135025Z Fetching i18n 1.14.7
+2025-08-12T11:09:10.6287352Z Installing i18n 1.14.7
+2025-08-12T11:09:10.6439149Z Fetching rb-inotify 0.11.1
+2025-08-12T11:09:10.6559905Z Installing rb-inotify 0.11.1
+2025-08-12T11:09:10.6629125Z Fetching pathutil 0.16.2
+2025-08-12T11:09:10.6754350Z Installing pathutil 0.16.2
+2025-08-12T11:09:10.6797515Z Fetching kramdown 2.5.1
+2025-08-12T11:09:10.7032947Z Installing kramdown 2.5.1
+2025-08-12T11:09:10.9681537Z Fetching terminal-table 3.0.2
+2025-08-12T11:09:10.9907377Z Installing terminal-table 3.0.2
+2025-08-12T11:09:10.9995006Z Fetching listen 3.9.0
+2025-08-12T11:09:11.0128484Z Installing listen 3.9.0
+2025-08-12T11:09:11.0262551Z Fetching kramdown-parser-gfm 1.1.0
+2025-08-12T11:09:11.0379789Z Installing kramdown-parser-gfm 1.1.0
+2025-08-12T11:09:11.0502281Z Fetching jekyll-watch 2.2.1
+2025-08-12T11:09:11.0619533Z Installing jekyll-watch 2.2.1
+2025-08-12T11:09:19.8538295Z Fetching google-protobuf 4.31.1 (x86_64-linux-gnu)
+2025-08-12T11:09:19.9480799Z Installing google-protobuf 4.31.1 (x86_64-linux-gnu)
+2025-08-12T11:09:19.9815143Z Fetching sass-embedded 1.90.0 (x86_64-linux-gnu)
+2025-08-12T11:09:20.1347074Z Installing sass-embedded 1.90.0 (x86_64-linux-gnu)
+2025-08-12T11:09:20.2199769Z Fetching jekyll-sass-converter 3.1.0
+2025-08-12T11:09:20.2314449Z Installing jekyll-sass-converter 3.1.0
+2025-08-12T11:09:24.7794351Z Fetching em-websocket 0.5.3
+2025-08-12T11:09:24.8126074Z Installing em-websocket 0.5.3
+2025-08-12T11:09:24.8237811Z Fetching jekyll 4.3.4
+2025-08-12T11:09:24.8512535Z Installing jekyll 4.3.4
+2025-08-12T11:09:24.8785088Z Fetching jekyll-feed 0.17.0
+2025-08-12T11:09:24.8785994Z Fetching jekyll-paginate-v2 3.0.0
+2025-08-12T11:09:24.8919004Z Installing jekyll-feed 0.17.0
+2025-08-12T11:09:24.9041242Z Installing jekyll-paginate-v2 3.0.0
+2025-08-12T11:09:24.9137314Z Bundle complete! 7 Gemfile dependencies, 34 gems now installed.
+2025-08-12T11:09:24.9138508Z Use `bundle info [gemname]` to see where a bundled gem is installed.
+2025-08-12T11:09:24.9643402Z ##[group]Run bundle exec jekyll build
+2025-08-12T11:09:24.9643732Z [36;1mbundle exec jekyll build[0m
+2025-08-12T11:09:24.9684462Z shell: /usr/bin/bash -e {0}
+2025-08-12T11:09:24.9684712Z ##[endgroup]
+2025-08-12T11:09:25.5923422Z Configuration file: /home/runner/work/puyokura.github.io/puyokura.github.io/_config.yml
+2025-08-12T11:09:25.6043574Z             Source: /home/runner/work/puyokura.github.io/puyokura.github.io
+2025-08-12T11:09:25.6046045Z        Destination: /home/runner/work/puyokura.github.io/puyokura.github.io/_site
+2025-08-12T11:09:25.6047551Z  Incremental build: disabled. Enable with --incremental
+2025-08-12T11:09:25.6048335Z       Generating... 
+2025-08-12T11:09:25.6148685Z        Jekyll Feed: Generating feed for posts
+2025-08-12T11:09:25.6153830Z          AutoPages: Disabled/Not configured in site.config.
+2025-08-12T11:09:25.6155961Z [33m        Pagination: Is enabled, but I couldn't find any pagination page. Skipping pagination. Pages must have 'pagination: enabled: true' in their front-matter for pagination to work.[0m
+2025-08-12T11:09:25.6156910Z         Pagination: Complete, processed pagination page(s)
+2025-08-12T11:09:25.9167596Z [33m     Build Warning: Layout 'single' requested in 404.html does not exist.[0m
+2025-08-12T11:09:25.9339998Z [33m    Liquid Warning: Liquid syntax error (line 6): Expected end_of_string but found pipe in "tag in site.tags | sort" in /home/runner/work/puyokura.github.io/puyokura.github.io/_layouts/tags_index.html[0m
+2025-08-12T11:09:25.9538036Z                     done in 0.35 seconds.
+2025-08-12T11:09:25.9538654Z  Auto-regeneration: disabled. Use --watch to enable.
+2025-08-12T11:09:25.9753795Z ##[group]Run peaceiris/actions-gh-pages@v3
+2025-08-12T11:09:25.9754083Z with:
+2025-08-12T11:09:25.9754536Z   github_token: ***
+2025-08-12T11:09:25.9754734Z   publish_dir: ./_site
+2025-08-12T11:09:25.9754946Z   publish_branch: gh-pages
+2025-08-12T11:09:25.9755175Z   allow_empty_commit: false
+2025-08-12T11:09:25.9755379Z   keep_files: false
+2025-08-12T11:09:25.9755566Z   force_orphan: false
+2025-08-12T11:09:25.9755753Z   enable_jekyll: false
+2025-08-12T11:09:25.9755952Z   disable_nojekyll: false
+2025-08-12T11:09:25.9756152Z   exclude_assets: .github
+2025-08-12T11:09:25.9756562Z ##[endgroup]
+2025-08-12T11:09:26.0374162Z [INFO] Usage https://github.com/peaceiris/actions-gh-pages#readme
+2025-08-12T11:09:26.0379303Z ##[group]Dump inputs
+2025-08-12T11:09:26.0379707Z [INFO] GithubToken: true
+2025-08-12T11:09:26.0380082Z [INFO] PublishBranch: gh-pages
+2025-08-12T11:09:26.0380541Z [INFO] PublishDir: ./_site
+2025-08-12T11:09:26.0380829Z [INFO] DestinationDir: 
+2025-08-12T11:09:26.0381281Z [INFO] ExternalRepository: 
+2025-08-12T11:09:26.0381656Z [INFO] AllowEmptyCommit: false
+2025-08-12T11:09:26.0381964Z [INFO] KeepFiles: false
+2025-08-12T11:09:26.0382183Z [INFO] ForceOrphan: false
+2025-08-12T11:09:26.0382412Z [INFO] UserName: 
+2025-08-12T11:09:26.0382607Z [INFO] UserEmail: 
+2025-08-12T11:09:26.0382814Z [INFO] CommitMessage: 
+2025-08-12T11:09:26.0383141Z [INFO] FullCommitMessage: 
+2025-08-12T11:09:26.0383474Z [INFO] TagName: 
+2025-08-12T11:09:26.0383773Z [INFO] TagMessage: 
+2025-08-12T11:09:26.0384120Z [INFO] EnableJekyll (DisableNoJekyll): false
+2025-08-12T11:09:26.0384462Z [INFO] CNAME: 
+2025-08-12T11:09:26.0384655Z [INFO] ExcludeAssets .github
+2025-08-12T11:09:26.0384820Z 
+2025-08-12T11:09:26.0385213Z ##[endgroup]
+2025-08-12T11:09:26.0385741Z ##[group]Setup auth token
+2025-08-12T11:09:26.0386083Z [INFO] setup GITHUB_TOKEN
+2025-08-12T11:09:26.0387859Z ##[endgroup]
+2025-08-12T11:09:26.0388242Z ##[group]Prepare publishing assets
+2025-08-12T11:09:26.0390344Z [INFO] ForceOrphan: false
+2025-08-12T11:09:26.0442718Z [command]/usr/bin/git clone --depth=1 --single-branch --branch gh-pages ***github.com/puyokura/puyokura.github.io.git /home/runner/actions_github_pages_1754996966038
+2025-08-12T11:09:26.0480074Z Cloning into '/home/runner/actions_github_pages_1754996966038'...
+2025-08-12T11:09:26.3778913Z fatal: Remote branch gh-pages not found in upstream origin
+2025-08-12T11:09:26.3823796Z [INFO] first deployment, create new branch gh-pages
+2025-08-12T11:09:26.3824321Z [INFO] The process '/usr/bin/git' failed with exit code 128
+2025-08-12T11:09:26.3829650Z [INFO] chdir /home/runner/actions_github_pages_1754996966038
+2025-08-12T11:09:26.3843564Z [command]/usr/bin/git init
+2025-08-12T11:09:26.3883782Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-12T11:09:26.3884598Z hint: is subject to change. To configure the initial branch name to use in all
+2025-08-12T11:09:26.3885378Z hint: of your new repositories, which will suppress this warning, call:
+2025-08-12T11:09:26.3885928Z hint:
+2025-08-12T11:09:26.3886294Z hint: 	git config --global init.defaultBranch <name>
+2025-08-12T11:09:26.3886952Z hint:
+2025-08-12T11:09:26.3887438Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-12T11:09:26.3888035Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-12T11:09:26.3888386Z hint:
+2025-08-12T11:09:26.3888565Z hint: 	git branch -m <name>
+2025-08-12T11:09:26.3888769Z hint:
+2025-08-12T11:09:26.3889053Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-08-12T11:09:26.3889567Z Initialized empty Git repository in /home/runner/actions_github_pages_1754996966038/.git/
+2025-08-12T11:09:26.3907682Z [command]/usr/bin/git checkout --orphan gh-pages
+2025-08-12T11:09:26.3931610Z Switched to a new branch 'gh-pages'
+2025-08-12T11:09:26.3937899Z [INFO] prepare publishing assets
+2025-08-12T11:09:26.3939040Z [INFO] copy /home/runner/work/puyokura.github.io/puyokura.github.io/_site to /home/runner/actions_github_pages_1754996966038
+2025-08-12T11:09:26.4075790Z cp: no such file or directory: /home/runner/work/puyokura.github.io/puyokura.github.io/_site/.*
+2025-08-12T11:09:26.4078284Z [INFO] delete excluded assets
+2025-08-12T11:09:26.4113987Z rm: no paths given
+2025-08-12T11:09:26.4116947Z [INFO] Created /home/runner/actions_github_pages_1754996966038/.nojekyll
+2025-08-12T11:09:26.4119036Z ##[endgroup]
+2025-08-12T11:09:26.4119726Z ##[group]Setup Git config
+2025-08-12T11:09:26.4133121Z [command]/usr/bin/git remote rm origin
+2025-08-12T11:09:26.4162773Z error: No such remote: 'origin'
+2025-08-12T11:09:26.4171392Z [INFO] The process '/usr/bin/git' failed with exit code 2
+2025-08-12T11:09:26.4187179Z [command]/usr/bin/git remote add origin ***github.com/puyokura/puyokura.github.io.git
+2025-08-12T11:09:26.4229171Z [command]/usr/bin/git add --all
+2025-08-12T11:09:26.4289133Z [command]/usr/bin/git config user.name puyokura
+2025-08-12T11:09:26.4325635Z [command]/usr/bin/git config user.email puyokura@users.noreply.github.com
+2025-08-12T11:09:26.4351798Z ##[endgroup]
+2025-08-12T11:09:26.4352359Z ##[group]Create a commit
+2025-08-12T11:09:26.4365560Z [command]/usr/bin/git commit -m deploy: 8b861eaa3275fa16624e69921f58fe915ae9ac6d
+2025-08-12T11:09:26.4435413Z [gh-pages (root-commit) 2cffe7a] deploy: 8b861eaa3275fa16624e69921f58fe915ae9ac6d
+2025-08-12T11:09:26.4436117Z  9 files changed, 670 insertions(+)
+2025-08-12T11:09:26.4436787Z  create mode 100644 .nojekyll
+2025-08-12T11:09:26.4437124Z  create mode 100644 404.html
+2025-08-12T11:09:26.4437373Z  create mode 100644 about/index.html
+2025-08-12T11:09:26.4437619Z  create mode 100644 assets/css/main.css
+2025-08-12T11:09:26.4437886Z  create mode 100644 assets/css/main.css.map
+2025-08-12T11:09:26.4438138Z  create mode 100644 feed.xml
+2025-08-12T11:09:26.4438347Z  create mode 100644 index.html
+2025-08-12T11:09:26.4438568Z  create mode 100644 tags/index.html
+2025-08-12T11:09:26.4439165Z  create mode 100644 "\343\203\226\343\203\255\343\202\260/2025/08/12/welcome-to-jekyll.html"
+2025-08-12T11:09:26.4440208Z ##[endgroup]
+2025-08-12T11:09:26.4440556Z ##[group]Push the commit or tag
+2025-08-12T11:09:26.4455768Z [command]/usr/bin/git push origin gh-pages
+2025-08-12T11:09:26.8560669Z remote: Permission to puyokura/puyokura.github.io.git denied to github-actions[bot].
+2025-08-12T11:09:26.8562097Z fatal: unable to access 'https://github.com/puyokura/puyokura.github.io.git/': The requested URL returned error: 403
+2025-08-12T11:09:26.8604694Z ##[error]Action failed with "The process '/usr/bin/git' failed with exit code 128"
+2025-08-12T11:09:26.8703800Z Post job cleanup.
+2025-08-12T11:09:26.9587077Z [command]/usr/bin/git version
+2025-08-12T11:09:26.9625070Z git version 2.50.1
+2025-08-12T11:09:26.9672050Z Temporarily overriding HOME='/home/runner/work/_temp/82ac0449-e9b8-452d-a73b-91d94e717e77' before making global git config changes
+2025-08-12T11:09:26.9673322Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-12T11:09:26.9676954Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/puyokura.github.io/puyokura.github.io
+2025-08-12T11:09:26.9711439Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-12T11:09:26.9743076Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-12T11:09:26.9971514Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-12T11:09:26.9994677Z http.https://github.com/.extraheader
+2025-08-12T11:09:27.0005274Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-08-12T11:09:27.0036676Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-12T11:09:27.0397094Z Cleaning up orphan processes
